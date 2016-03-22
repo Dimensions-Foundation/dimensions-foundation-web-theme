@@ -1,0 +1,52 @@
+
+/* CSS Document */
+
+@media (max-width: 850px) {
+
+#primary-menu li {
+	padding : 10px 10px 10px;
+}
+}
+
+@media (max-width: 800px) {
+
+.menu-top-menu-container,
+ .sidebar-container,
+ header {
+	display : none;
+}
+
+.page-container,
+ footer {
+	border-radius : 0;
+}
+}
+
+@media (max-width: 600px) {
+
+.page-feature-img img {
+	border-radius : 0;
+}
+
+#footer-menu li a {
+	margin : 10px 0 10px;
+	border : none;
+}
+
+.school-closing {
+	font-size : 9pt;
+}
+}
+
+@media (max-width: 500px) {
+
+#gallery-1 .gallery-item,
+#gallery-2 .gallery-item {
+	width: 15% !important;
+}
+
+#gallery-1 .gallery-item dt a img,
+#gallery-2 .gallery-item dt a img {
+	border-radius: 10px;
+}
+}

@@ -1,0 +1,46 @@
+/*
+  * Plugin Custom CSS
+  * -----------------
+  * This CSS file contains custom styling that is for any and all plugins found
+  in this network
+  *
+*/
+
+/*
+  *
+  * Ninja Forms Custom CSS
+*/
+
+.ninja-forms-cont table {
+  margin-bottom : 5px;
+  padding       : 10px 5px 10px;
+  border-radius : 12px;
+  background    : rgba( 80, 80, 80, 0.25);
+}
+
+.ninja-forms-cont table tbody tr td {
+  background : #FFFFFF;
+}
+
+.forms-widget .ninja-forms-form-wrap {
+  background : none;
+}
+
+#ninja_forms_form_15_save_progress {
+  font-size : 10pt !important;
+}
+
+/*
+  *
+  * Shortcodes Ultimate Custom CSS
+*/
+
+.su-post-blog {
+  padding       : 25px 0 25px;
+  border-bottom : 2px solid #d2e7b5;
+}
+
+.su-posts-blog-loop .su-post-blog-thumbnail img {
+  max-width  : 150px;
+  max-height : 150px;
+}
