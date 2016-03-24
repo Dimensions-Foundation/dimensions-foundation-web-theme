@@ -1,3 +1,19 @@
+#primary-menu.nep-primary-menu {
+	position : relative;
+	top: -3px;
+	float : right;
+	margin-right: 25px;
+}
+#primary-menu.nep-primary-menu li {
+	margin : 0 5px 0;
+	padding : 15px 5px 15px;
+	border-radius : 12px 12px 0 0;
+	background : #174a7c;
+	font-size: 10pt !important;
+	max-width: 75px;
+	text-align: center;
+}
+
 #primary-menu.nep-primary-menu .research-nav {
 	max-width: 100px
 }
@@ -8,4 +24,17 @@
 
 #primary-menu.nep-primary-menu .workshops-nav {
 	max-width: 100px;
+}
+
+.site-logo.nep-logo img {
+margin-top: -25px;
+margin-left: 10px;
+}
+
+
+.site-logo.nep-logo,
+.site-logo.nep-logo img {
+	border-radius : 0;
+	max-width : 275px;
+
 }

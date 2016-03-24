@@ -29,10 +29,24 @@
 }
 
 
-.school-closing {
-	padding : 10px 0 10px;
-	color : #FFFFFF;
-	background : #78a22f;
-	text-align : center;
-	font-size : 10pt;
+.site-logo.dep-logo {
+	width : 100%;
+	max-width : 250px;
+	margin : 10px 25px 10px;
+}
+
+.site-logo.dep-logo img {
+	border-radius : 0;
+}
+
+#menu-forms-menu li,
+#menu-forms-menu li a {
+	font-size: 10pt;
+font-weight: normal;	
+padding: 2px;
+}
+
+#menu-forms-menu {
+
+	-webkit-margin-before: 0;	
 }

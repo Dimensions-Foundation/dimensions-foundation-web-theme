@@ -104,37 +104,40 @@ img {
 */
 
 .background-blue {
-  background-color : #174a7c;
+  background-color : #174a7c !important;
 }
 
 .background-brown {
-  background-color : #755725;
+  background-color : #755725 !important;
 }
 
 .background-purple {
-  background-color : #57075e;
+  background-color : #57075e !important;
 }
 
 .background-orange {
-  background-color : #d35d2b;
+  background-color : #d35d2b !important;
 }
 
 .background-red {
-  background-color : #691c00;
+  background-color : #691c00 !important;
 }
 
 .background-green-light {
-  background-color : #d2e7b5;
+  background-color : #d2e7b5 !important;
 }
 
+
+.background-green-medium-light {
+  background-color : #9fc24d !important;
+}
 
 .background-green-medium {
-  background-color : #7a9943;
+  background-color : #7a9943 !important;
 }
 
-
 .background-green-dark {
-  background-color : #1e6f41;
+  background-color : #1e6f41 !important;
 }
 
 /*
@@ -209,6 +212,8 @@ img {
 /* Sidebar Navigation */
 
 .sidebar-nav {
+	-webkit-padding-start: 10px;
+	margin-bottom: 0;
 }
 
 #menu-classrooms li,
@@ -396,6 +401,10 @@ header {
   width : 100%;
 }
 
+#menu-forms-menu li a {
+font-weight: normal;	
+}
+
 /*
   *
   * Footer
@@ -403,6 +412,14 @@ header {
 
 footer {
   border-radius : 0 0 25px 25px;
+}
+
+.footer-alert {
+	padding : 10px 0 10px;
+	color : #FFFFFF;
+	background : #78a22f;
+	text-align : center;
+	font-size : 10pt;
 }
 
 .footer-content {

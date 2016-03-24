@@ -2,7 +2,7 @@
 $site_url = get_home_url();
 $footer_background = null;
 $footer_copyright_text =  get_bloginfo('name');
-$footer_copyright_text .= ' 	&copy;' . date('Y') . ' All rights reserved. <br />'; 
+$footer_copyright_text .= ' 	&copy;' . date('Y') . ' All rights reserved. <br />';
 
 if ( strstr( $site_url, 'natureexplore.org' ) ) {
 		$footer_background = "background-brown";
@@ -15,7 +15,7 @@ if ( strstr( $site_url, 'natureexplore.org' ) ) {
 	}?>
 
 <footer class="<?php echo $footer_background; ?>">
-  <?php dynamic_sidebar('school-closing-widget'); ?>
+  <?php dynamic_sidebar('footer-alert-widget'); ?>
   <div class="footer-content">
     <?php $defaults = array(
       'theme_location' 	=> 'footer-menu-location',

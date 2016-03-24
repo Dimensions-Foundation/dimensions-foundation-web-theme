@@ -44,3 +44,8 @@
   max-width  : 150px;
   max-height : 150px;
 }
+.su-highlight.highlighted-header {
+	border-radius: 10px;
+padding: 5px;
+width: 100%;
+}

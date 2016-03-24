@@ -22,7 +22,7 @@ add_action( 'wp_enqueue_scripts', 'derf_theme_styles');
 // Add Editor Style
 add_editor_style();
 
-/* 
+/*
  * Register Widgets
  *
  * Description: This function adds widgets to the theme
@@ -49,29 +49,31 @@ function derf_add_widget_sidebar() {
 		'before_title'  => '<h3 class="community-widget-header">',
 		'after_title'   => '</h3>',
 	) );
-	/* Dimensions Foundation Widgets */
-
-	
-	
-	/* Dimensions Education Programs Widgets */
 	register_sidebar( array(
-		'name'          => 'Forms Sidebar',
-		'id'            => 'forms_sidebar',
-		'before_widget' => '<div class="forms-widget">',
-		'after_widget'  => '</div>',
-		'before_title'  => '<h3 class="forms-widget-header">',
-		'after_title'   => '</h3>',
-	) );
-	register_sidebar( array(
-		'name'          => 'School Closing',
-		'id'            => 'school-closing-widget',
-		'before_widget' => '<div class="school-closings">',
+		'name'          => 'Footer Alert',
+		'id'            => 'footer-alert-widget',
+		'before_widget' => '<div class="footer-alert">',
 		'after_widget'  => '</div>',
 		'before_title'  => '',
 		'after_title'   => '',
 	) );
+	register_sidebar( array(
+		'name'          => 'Custom Sidebar',
+		'id'            => 'custom-sidebar',
+		'before_widget' => '<div class="custom-sidebar-widget">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h3 class="custom-sidebar-header">',
+		'after_title'   => '</h3>',
+	) );
+	/* Dimensions Foundation Widgets */
+
+
+
+	/* Dimensions Education Programs Widgets */
+
+
 	/* Nature Explore Widgets */
-	
+
 
 }
 add_action( 'widgets_init', 'derf_add_widget_sidebar' );

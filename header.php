@@ -14,10 +14,10 @@
 			 $site_primary_menu_class .= " derf-primary-menu";
 		 } else  if ( strstr( $blog_url, 'dimensionsed.org' ) ) {
 			 $site_logo_class = 'dep-logo';
-			 $site_primary_menu_class .= " derf-primary-menu";
+			 $site_primary_menu_class .= " dep-primary-menu";
 		 } else  if ( strstr( $blog_url, 'natureexplore.org' ) ) {
 			 $site_logo_class = 'nep-logo';
-			 $site_primary_menu_class .= " derf-primary-menu";
+			 $site_primary_menu_class .= " nep-primary-menu";
 		 }
 	
 	?>
