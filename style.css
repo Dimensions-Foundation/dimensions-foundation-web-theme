@@ -1,18 +1,17 @@
-
 /*
   *
-  * Theme Name: Dimensions Education Programs
-  * Theme URI:  http://www.dimensionsedn.org
+  * Theme Name: Dimensions Foundation Theme Template
+  * Theme URI: http://www.dimensionsfoundation.org
   * Author: Michael Kracke
   * Author URI: http://www.michaelkracke.com
   * Description: This is a theme built for Dimensions Education Programs
-  * Version: 1.1.3
+  * Version: 1.0.0
   * License: GNU General Public License v2 or Later
   * License URI: http://www.gnu.org/licenses/gpl-2.0.html
   * Tags: flexible-width
-  * Text Domain:  dimensions-educational-research-foundation
+  * Text Domain: dimensions-educational-research-foundation
   *
-  * Date of Version Change: March 2nd, 2016
+  * Date of Version Change: March 22nd, 2016
   *
 */
 
@@ -24,13 +23,13 @@
 footer,
 header,
 section.page-container {
-	width : 100%;
-	max-width : 1000px;
-	margin : 0 auto;
+  width     : 100%;
+  max-width : 1000px;
+  margin    : 0 auto;
 }
 
 body {
-	margin : 0;
+  margin : 0;
 }
 
 body,
@@ -41,8 +40,11 @@ p,
 section,
 span,
 ul {
-	color : #58585a;
-	font-family : "Helvetica Neue",  Helvetica,  Arial,  sans-serif;
+  color       : #58585a;
+  font-family : "Helvetica Neue",
+                Helvetica,
+                Arial,
+                sans-serif;
 }
 
 h1,
@@ -51,50 +53,82 @@ h3,
 h4,
 h5,
 p {
-	margin : 0;
-	padding : 0 10px 0;
+  margin  : 0;
+  padding : 0 10px 0;
 }
 
 p {
-	line-height: 1.4;
-	font-size: 12pt;
-	padding-bottom : 10px;
+  padding-bottom : 10px;
+  font-size      : 12pt;
+  line-height    : 1.4;
 }
 
 h1 {
-	font-size : 24pt;
+  font-size : 24pt;
 }
 
 h2 {
-	font-size : 20pt;
+  font-size : 20pt;
 }
 
 h3 {
-	font-size : 16pt;
+  font-size : 16pt;
 }
 
 a {
-	color : #174a7c;
-	text-decoration : none;
-	font-weight : bold;
+  color           : #174a7c;
+  text-decoration : none;
+  font-weight     : bold;
 }
 
 ul {
-	-webkit-margin-before: 0;
 }
 
 /* * Image CSS */
 
 img {
-	border-radius : 25px;
+  border-radius : 25px;
 }
 
 .no-rounded-img {
-	border-radius : 0 !important;
+  border-radius : 0 !important;
 }
 
 .attachment {
-	margin-bottom : 0 !important;
+  margin-bottom : 0 !important;
+}
+
+/*
+  *
+  * Colors
+*/
+
+.background-blue {
+  background-color : #174a7c;
+}
+
+.background-brown {
+  background-color : #755725;
+}
+
+.background-purple {
+  background-color : #57075e;
+}
+
+.background-orange {
+  background-color : #d35d2b;
+}
+
+.background-red {
+  background-color : #691c00;
+}
+
+.background-green-light {
+  background-color : #d2e7b5;
+}
+
+.background-green-dark {
+  background-color : #1e6f41;
 }
 
 /*
@@ -105,122 +139,117 @@ img {
 /* General Naviation */
 
 .horizontal-menu {
-	display : inline-block;
-	-webkit-margin-before: 1em;
+  display : inline-block;
 }
 
 .horizontal-menu li {
-	float : left;
-	font-size : 10pt;
-	list-style : none;
+  float      : left;
+  font-size  : 10pt;
+  list-style : none;
 }
 
 .horizontal-menu li a {
-	color : #FFFFFF;
-	font-weight : normal;
+  color       : #FFFFFF;
+  font-weight : normal;
 }
 
 .line-break li a {
-	padding : 3px 10px 3px;
-	border-right : 1px solid #FFFFFF;
+  padding      : 3px 10px 3px;
+  border-right : 1px solid #FFFFFF;
 }
 
 .line-break li:last-child a {
-	border : none;
+  border : none;
 }
 
 /* Top Menu */
 
 .menu-top-menu-container {
-	margin-bottom : 50px;
-	padding : 5px;
-	background : #174a7c;
-	text-align : center;
-	font-size : 9pt;
+  margin-bottom : 50px;
+  padding       : 5px;
+  background    : #174a7c;
+  text-align    : center;
+  font-size     : 9pt;
 }
 
 /* Primary Menu */
 
 #primary-menu {
-	position : relative;
-	top : 13px;
-	float : right;
-	margin-right : 25px;
+  position     : relative;
+  top          : 13px;
+  float        : right;
+  margin-right : 25px;
 }
 
 #primary-menu li {
-	margin : 0 2px 0;
-	padding : 15px 20px 15px;
-	border-radius : 12px 12px 0 0;
-	background : #174a7c;
+  margin        : 0 2px 0;
+  padding       : 15px 20px 15px;
+  border-radius : 12px 12px 0 0;
+  background    : #174a7c;
 }
 
-#primary-menu li.current-page-ancestor,
-#primary-menu li.current-menu-item {
-	background: #FFFFFF !important;
+#primary-menu li.current-menu-item,
+#primary-menu li.current-page-ancestor {
+  background : #FFFFFF !important;
 }
 
-#primary-menu li.current-page-ancestor a,
-#primary-menu li.current-menu-item a {
-	color: #174a7c !important;
-	font-weight: bold;
+#primary-menu li.current-menu-item a,
+#primary-menu li.current-page-ancestor a {
+  color       : #174a7c !important;
+  font-weight : bold;
 }
 
 #primary-menu .about-us-nav {
-	background-color : #f15d22;
+  background-color : #f15d22;
 }
 
 #primary-menu .programs-nav {
-	background-color : #7a1600;
+  background-color : #7a1600;
 }
 
 #primary-menu .for-families-nav {
-	background-color : #78a22f;
+  background-color : #78a22f;
 }
 
 #primary-menu .involvement-nav {
-	background-color : #174a7c;
+  background-color : #174a7c;
 }
 
 #primary-menu .calendar-nav {
-	background-color : #80561b;
+  background-color : #80561b;
 }
 
 #primary-menu .donate-nav {
-	background-color : #0086be;
+  background-color : #0086be;
 }
 
 /* Sidebar Navigation */
 
-
 .sidebar-nav {
-	-webkit-margin-after: 0;
-	-webkit-margin-before: 1em;
-	-webkit-padding-start: 10px;
 }
 
 #menu-classrooms li,
 .sidebar-nav li {
-	padding : 10px 0 10px;
-	border-bottom : 1px solid #58585a;
-	font-size : 11pt;
-	list-style : none;
+  padding       : 10px 0 10px;
+  border-bottom : 1px solid #58585a;
+  font-size     : 11pt;
+  list-style    : none;
 }
 
 #menu-classrooms li:last-child,
 .sidebar-nav li:last-child {
-	border : none;
+  border : none;
 }
 
 #menu-classrooms li a,
 .sidebar-nav li a {
-	font-weight : normal;
+  font-weight : normal;
 }
 
 .sidebar-nav-title li a {
-	padding : 0;
-	font-size : 14pt;
-	font-weight : bold;
+  padding     : 0;
+  font-size   : 14pt;
+  font-weight : bold;
 }
 
 /* Forms Siderbar Navigation */
@@ -229,12 +258,12 @@ img {
 }
 
 .forms-widget #menu-forms-menu li {
-	padding : 5px;
-	font-size : 10pt;
+  padding   : 5px;
+  font-size : 10pt;
 }
 
 .forms-widget #menu-forms-menu li a {
-	font-weight : normal;
+  font-weight : normal;
 }
 
 /*
@@ -243,17 +272,17 @@ img {
 */
 
 header {
-	height : 75px;
+  height : 75px;
 }
 
 .site-logo {
-	width : 100%;
-	max-width : 250px;
-	margin : 10px 25px 10px;
+  width     : 100%;
+  max-width : 250px;
+  margin    : 10px 25px 10px;
 }
 
 .site-logo img {
-	border-radius : 0;
+  border-radius : 0;
 }
 
 /*
@@ -262,82 +291,82 @@ header {
 */
 
 .page-container {
-	border-radius : 25px;
-	background : #FFFFFF;
-	box-shadow : 2px 2px 2px #58585a;
+  border-radius : 25px;
+  background    : #FFFFFF;
+  box-shadow    : 2px 2px 2px #58585a;
 }
 
 .full-page-container {
-	padding : 150px 15px 15px;
+  padding : 150px 15px 15px;
 }
 
 /* Content Container */
 
 .content-container {
-	max-width : 675px;
-	margin : 15px auto;
-	flex : grow;
+  max-width : 675px;
+  margin    : 15px auto;
+  flex      : grow;
 }
 
 .page-feature-img {
-	width : 100%;
-	margin : 25px auto 15px;
-	text-align : center;
+  width      : 100%;
+  margin     : 25px auto 15px;
+  text-align : center;
 }
 
 .page-feature-img img {
-	width : 100%;
-	max-width : 625px;
-	height : 100%;
+  width     : 100%;
+  max-width : 625px;
+  height    : 100%;
 }
 
 /* Attachment.php */
 
 .center-content {
-	text-align : center;
+  text-align : center;
 }
 
 .attachment-title {
-	margin-bottom : 10px;
+  margin-bottom : 10px;
 }
 
 .attachment-content {
-	width : 75%;
-	margin : auto;
-	padding-bottom : 25px;
+  width          : 75%;
+  margin         : auto;
+  padding-bottom : 25px;
 }
 
 /* Comments */
 
 .comment-container {
-	padding : 10px;
-	background : rgba(210,231,181,0.25);
+  padding    : 10px;
+  background : rgba(210,231,181,0.25);
 }
 
 /* This is the textarea comment box */
 
 #comment {
-	width : 95%;
-	clear : both;
+  width : 95%;
+  clear : both;
 }
 
 /* This is each comment displayed */
 
 .comment {
-	padding : 10px 0 10px;
-	border-bottom : 1px solid #58585a;
+  padding       : 10px 0 10px;
+  border-bottom : 1px solid #58585a;
 }
 
 #respond {
-	padding-top : 10px;
+  padding-top : 10px;
 }
 
 .comment-author img {
-	display : none;
+  display : none;
 }
 
 .homepage-intro ~ p {
-	/*
+    /*
     * adding style to the intro excerpt on the homepage
     	* Can not find css for
     	*
@@ -347,46 +376,46 @@ header {
     	*
     <p> following the tag with the .homepage-intro class
   */
-	padding : 0 15px 0;
-	color : #78a22f;
-	font-style : italic;
+  padding    : 0 15px 0;
+  color      : #78a22f;
+  font-style : italic;
 }
 
 .body ul li {
-	margin : 10px 0 10px;
+  margin : 10px 0 10px;
 }
 
 /* Sidebar Container */
 
 .sidebar-container {
-	display : block;
-	width : 27.5%;
-	min-height : 300px;
-	margin-top : 175px;
-	padding : 10px;
-	border-radius : 0 25px 0 0;
-	background : #d2e7b5;
-	flex : shrink;
+  display       : block;
+  width         : 27.5%;
+  min-height    : 300px;
+  margin-top    : 175px;
+  padding       : 10px;
+  border-radius : 0 25px 0 0;
+  background    : #d2e7b5;
+  flex          : shrink;
 }
 
 .display-inline-block {
-	display : flex;
-	width : 100%;
+  display : flex;
+  width   : 100%;
 }
 
 .fixed-position {
-	position : fixed;
-	width: 20%;
+  position : fixed;
+  width    : 20%;
 }
 
 /* Widgets */
 
 .community-widget {
-	margin-top : 15px;
+  margin-top : 15px;
 }
 
 .textwidget p img {
-	width : 100%;
+  width : 100%;
 }
 
 /*
@@ -395,48 +424,40 @@ header {
 */
 
 footer {
-	border-radius : 0 0 25px 25px;
-	background : #174a7c;
+  border-radius : 0 0 25px 25px;
+  background    : #174a7c;
 }
 
 .footer-content {
-	display : flex;
+  display : flex;
 }
 
 .menu-footer-menu-container {
-	margin: auto;
+  margin : auto;
 }
 
 #footer-menu {
-	margin-bottom: 0;
+  margin-bottom : 0;
 }
 
 #footer-menu li {
-	padding : 10px 0px 10px;
+  padding : 10px 0px 10px;
 }
 
 #footer-menu li a {
-	padding : 5px 15px 5px;
+  padding : 5px 15px 5px;
 }
 
 #google_language_translator {
-	text-align: center;
-	padding-bottom: 10px;
-}
-
-.school-closing {
-	padding : 10px 0 10px;
-	color : #FFFFFF;
-	background : #78a22f;
-	text-align : center;
-	font-size : 10pt;
+  padding-bottom : 10px;
+  text-align     : center;
 }
 
 .copyright p {
-	margin-bottom : 25px;
-	padding : 10px 0 10px;
-	color : #174a7c;
-	text-align : center;
-	font-size : 10pt;
-	font-weight : bold;
+  margin-bottom : 25px;
+  padding       : 10px 0 10px;
+  color         : #174a7c;
+  text-align    : center;
+  font-size     : 10pt;
+  font-weight   : bold;
 }

@@ -9,6 +9,9 @@ function kracke_theme_styles() {
 	wp_enqueue_style( 'gallery_css', get_template_directory_uri() . '/css/gallery.css' );
 	wp_enqueue_style( 'custom_plugin_style_css', get_template_directory_uri() . '/css/custom-plugin-style.css' );
 	wp_enqueue_style( 'media_queries_css', get_template_directory_uri() . '/css/media-queries.css' );
+	wp_enqueue_style( 'dimensions_foundation_css', get_template_directory_uri() . '/css/dimensions-foundation.css' );
+	wp_enqueue_style( 'dimensions_education_programs_css', get_template_directory_uri() . '/css/dimensions-education-programs.css' );
+	wp_enqueue_style( 'nature_explore_css', get_template_directory_uri() . '/css/nature-explore.css' );
 }
 
 add_action( 'wp_enqueue_scripts', 'kracke_theme_styles');

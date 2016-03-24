@@ -1,5 +1,13 @@
+<?php
+$site_url = get_home_url();
+$footer_background = null;
+if ( strstr( $site_url, 'natureexplore.org' ) ) {
+		$footer_background = "background-brown";
+	} else if ( strstr( $site_url, 'dimensionsed.org' ) ) {
+		$footer_background = "background-blue";
+	} ?>
 
-<footer>
+<footer class="<?php echo $footer_background; ?>">
   <?php dynamic_sidebar('school-closing-widget'); ?>
   <div class="footer-content">
     <?php $defaults = array(
