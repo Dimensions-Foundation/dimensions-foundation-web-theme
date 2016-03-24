@@ -5,13 +5,13 @@
   * Author: Michael Kracke
   * Author URI: http://www.michaelkracke.com
   * Description: This is a theme built for Dimensions Education Programs
-  * Version: 1.0.0
+  * Version: 1.0.1
   * License: GNU General Public License v2 or Later
   * License URI: http://www.gnu.org/licenses/gpl-2.0.html
   * Tags: flexible-width
   * Text Domain: dimensions-educational-research-foundation
   *
-  * Date of Version Change: March 22nd, 2016
+  * Date of Version Change: March 24th, 2016
   *
 */
 
@@ -127,6 +127,12 @@ img {
   background-color : #d2e7b5;
 }
 
+
+.background-green-medium {
+  background-color : #7a9943;
+}
+
+
 .background-green-dark {
   background-color : #1e6f41;
 }
@@ -199,29 +205,6 @@ img {
   font-weight : bold;
 }
 
-#primary-menu .about-us-nav {
-  background-color : #f15d22;
-}
-
-#primary-menu .programs-nav {
-  background-color : #7a1600;
-}
-
-#primary-menu .for-families-nav {
-  background-color : #78a22f;
-}
-
-#primary-menu .involvement-nav {
-  background-color : #174a7c;
-}
-
-#primary-menu .calendar-nav {
-  background-color : #80561b;
-}
-
-#primary-menu .donate-nav {
-  background-color : #0086be;
-}
 
 /* Sidebar Navigation */
 
@@ -275,14 +258,10 @@ header {
   height : 75px;
 }
 
-.site-logo {
-  width     : 100%;
-  max-width : 250px;
-  margin    : 10px 25px 10px;
-}
-
+.site-logo,
 .site-logo img {
-  border-radius : 0;
+	border-radius : 0;
+	width: 100%
 }
 
 /*
@@ -394,7 +373,6 @@ header {
   margin-top    : 175px;
   padding       : 10px;
   border-radius : 0 25px 0 0;
-  background    : #d2e7b5;
   flex          : shrink;
 }
 
@@ -425,7 +403,6 @@ header {
 
 footer {
   border-radius : 0 0 25px 25px;
-  background    : #174a7c;
 }
 
 .footer-content {

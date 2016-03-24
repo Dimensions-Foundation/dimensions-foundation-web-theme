@@ -2,7 +2,7 @@
 <?php /* Template Name: Sidebar - Left */ ?>
 
 <div class="display-inline-block">
-  <div class="sidebar-container">
+  <div class="sidebar-container background-green-light">
     <div class=" fixed-position">
       <?php $children = get_pages('child_of='.get_post_top_ancestor_id()); ?>
       <?php if( count( $children ) != 0 ) { ?>

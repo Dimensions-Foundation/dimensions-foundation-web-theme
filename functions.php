@@ -1,12 +1,15 @@
 <?php
 if ( ! isset( $content_width ) ) $content_width = 1000;
 
+
+
 /**
 * Add in the Style Sheets
 */
-function kracke_theme_styles() {
+function derf_theme_styles() {
 	wp_enqueue_style( 'main_css', get_template_directory_uri() . '/style.css' );
 	wp_enqueue_style( 'gallery_css', get_template_directory_uri() . '/css/gallery.css' );
+	wp_enqueue_style( 'fonts_css', get_template_directory_uri() . '/css/fonts.css' );
 	wp_enqueue_style( 'custom_plugin_style_css', get_template_directory_uri() . '/css/custom-plugin-style.css' );
 	wp_enqueue_style( 'media_queries_css', get_template_directory_uri() . '/css/media-queries.css' );
 	wp_enqueue_style( 'dimensions_foundation_css', get_template_directory_uri() . '/css/dimensions-foundation.css' );
@@ -14,28 +17,28 @@ function kracke_theme_styles() {
 	wp_enqueue_style( 'nature_explore_css', get_template_directory_uri() . '/css/nature-explore.css' );
 }
 
-add_action( 'wp_enqueue_scripts', 'kracke_theme_styles');
+add_action( 'wp_enqueue_scripts', 'derf_theme_styles');
 
 // Add Editor Style
 add_editor_style();
 
-/* Register our sidebars and widgetized areas. */
-function kracke_add_widget_sidebar() {
-
+/* 
+ * Register Widgets
+ *
+ * Description: This function adds widgets to the theme
+ *              There are 4 sections within this function.
+ *              1 for each of the three divisions of DERF,
+ *              and 1 section for generic widgets
+ *
+ */
+function derf_add_widget_sidebar() {
+	/* Generic Widgets */
 	register_sidebar( array(
 		'name'          => 'Home Sidebar',
 		'id'            => 'home_sidebar',
 		'before_widget' => '<div class="widget">',
 		'after_widget'  => '</div>',
 		'before_title'  => '<h3 class="widget-header">',
-		'after_title'   => '</h3>',
-	) );
-	register_sidebar( array(
-		'name'          => 'Forms Sidebar',
-		'id'            => 'forms_sidebar',
-		'before_widget' => '<div class="forms-widget">',
-		'after_widget'  => '</div>',
-		'before_title'  => '<h3 class="forms-widget-header">',
 		'after_title'   => '</h3>',
 	) );
 	register_sidebar( array(
@@ -46,6 +49,19 @@ function kracke_add_widget_sidebar() {
 		'before_title'  => '<h3 class="community-widget-header">',
 		'after_title'   => '</h3>',
 	) );
+	/* Dimensions Foundation Widgets */
+
+	
+	
+	/* Dimensions Education Programs Widgets */
+	register_sidebar( array(
+		'name'          => 'Forms Sidebar',
+		'id'            => 'forms_sidebar',
+		'before_widget' => '<div class="forms-widget">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h3 class="forms-widget-header">',
+		'after_title'   => '</h3>',
+	) );
 	register_sidebar( array(
 		'name'          => 'School Closing',
 		'id'            => 'school-closing-widget',
@@ -54,9 +70,11 @@ function kracke_add_widget_sidebar() {
 		'before_title'  => '',
 		'after_title'   => '',
 	) );
+	/* Nature Explore Widgets */
+	
 
 }
-add_action( 'widgets_init', 'kracke_add_widget_sidebar' );
+add_action( 'widgets_init', 'derf_add_widget_sidebar' );
 
 
 /**
@@ -65,7 +83,7 @@ add_action( 'widgets_init', 'kracke_add_widget_sidebar' );
 
 add_theme_support( 'menus' ) ;
 
-function kracke_register_theme_menus() {
+function derf_register_theme_menus() {
 	register_nav_menus(
 	array(
 		'primary-menu-location'	=> __( 'Primary Menu' ),
@@ -74,7 +92,7 @@ function kracke_register_theme_menus() {
 		)
 	);
 }
-add_action( 'init', 'kracke_register_theme_menus' );
+add_action( 'init', 'derf_register_theme_menus' );
 
 
 /**

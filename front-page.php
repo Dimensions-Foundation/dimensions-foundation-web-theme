@@ -1,26 +1,13 @@
-<?php get_header(); ?>
+<?php 
 
-<div class="display-inline-block">
-  <div class="sidebar-container">
-    <?php dynamic_sidebar('home-sidebar'); ?>
-  </div>
-  <div class="content-container">
-    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-      <p class="homepage-intro">
-        <?php the_excerpt(); ?>
-      </p>
-      <div class="page-feature-img">
-        <?php if ( has_post_thumbnail() ) {
-          the_post_thumbnail( 'feature-image' ); } ?>
-        </div>
-        <p>
-          <?php the_content(); ?>
-        </p>
-      <?php endwhile; else : ?>
-        <p>
-          <?php _e( 'Sorry, There is nothing to display. '); ?>
-        </p>
-      <?php endif; ?>
-    </div>
-  </div>
-  <?php get_footer(); ?>
+get_header();
+ $blog_url = get_home_url(); 
+		 if ( strstr( $blog_url, 'dimensionsfoundation.org' ) ) {
+			get_template_part( 'front-page', 'derf' );
+		} else {
+			get_template_part( 'front-page', 'default' );
+		}
+
+get_footer();
+
+?>

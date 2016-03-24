@@ -1,0 +1,12 @@
+
+.site-logo.derf-logo {
+	margin : 10px 15px 10px;
+	padding-top: 25px;
+}
+
+.site-logo.derf-logo,
+.site-logo.derf-logo img {
+	border-radius : 0;
+	max-width : 275px;
+	
+}
