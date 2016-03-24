@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <?php /* Template Name: Sidebar - Left */ ?>
-
+<section class="page-container">
 <div class="display-inline-block">
   <div class="sidebar-container background-green-light">
     <div class=" fixed-position">

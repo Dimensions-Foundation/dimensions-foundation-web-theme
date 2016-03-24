@@ -7,13 +7,17 @@
 	} 
 	$blog_url = get_home_url(); 
 		$site_logo_class = '';
+		$site_primary_menu_class = 'horizontal-menu';
 	
 		 if ( strstr( $blog_url, 'dimensionsfoundation.org' ) ) {
 			 $site_logo_class = 'derf-logo';
+			 $site_primary_menu_class .= " derf-primary-menu";
 		 } else  if ( strstr( $blog_url, 'dimensionsed.org' ) ) {
 			 $site_logo_class = 'dep-logo';
+			 $site_primary_menu_class .= " derf-primary-menu";
 		 } else  if ( strstr( $blog_url, 'natureexplore.org' ) ) {
 			 $site_logo_class = 'nep-logo';
+			 $site_primary_menu_class .= " derf-primary-menu";
 		 }
 	
 	?>
@@ -42,7 +46,7 @@
 			'theme_location' 		=> 'primary-menu-location',
 			'container'				=> 'nav',
 			'menu_id' 				=> 'primary-menu',
-			'menu_class'				=> 'horizontal-menu',
+			'menu_class'				=> $site_primary_menu_class,
 		);
 
 		wp_nav_menu( $defaults );		?>
@@ -50,4 +54,4 @@
 </header>
 
 <body <?php body_class(); ?>>
-<section class="page-container">
+

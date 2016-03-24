@@ -1,4 +1,6 @@
 <?php get_header(); ?>
+
+<section class="page-container">
 <div class="display-inline-block">
   <div class="sidebar-container"> 
    <div class=" fixed-position">

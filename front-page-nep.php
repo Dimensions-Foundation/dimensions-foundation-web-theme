@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<section class="page-container">
+<section class="page-container background-green-dark">
 <div class="display-inline-block">
   <div class="sidebar-container background-green-light">
     <?php dynamic_sidebar('home-sidebar'); ?>
