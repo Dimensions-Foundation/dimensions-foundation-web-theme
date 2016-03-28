@@ -68,8 +68,7 @@ img.alignright {
 	text-align : center;
 }
 
-#gallery-1 .gallery-item,
-#gallery-2 .gallery-item {
+.gallery-columns-5 .gallery-item {
 	margin: 10px !important;
 	width: 16% !important;
 }

@@ -6,6 +6,7 @@
 #primary-menu li {
 	padding : 10px 10px 10px;
 }
+/* End Media-Query */
 }
 
 @media (max-width: 800px) {
@@ -20,6 +21,7 @@
  footer {
 	border-radius : 0;
 }
+/* End Media-Query */
 }
 
 @media (max-width: 600px) {
@@ -36,17 +38,17 @@
 .school-closing {
 	font-size : 9pt;
 }
+/* End Media-Query */
 }
 
 @media (max-width: 500px) {
 
-#gallery-1 .gallery-item,
-#gallery-2 .gallery-item {
+.gallery-columns-5 .gallery-item {
 	width: 15% !important;
 }
 
-#gallery-1 .gallery-item dt a img,
-#gallery-2 .gallery-item dt a img {
+.gallery-columns-5 .gallery-item .gallery-icon img {
 	border-radius: 10px;
 }
+/* End Media-Query */
 }

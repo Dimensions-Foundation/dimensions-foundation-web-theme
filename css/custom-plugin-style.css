@@ -22,8 +22,8 @@
   background : #FFFFFF;
 }
 
-.forms-widget .ninja-forms-form-wrap {
-  background : none;
+ div.ninja-forms-form-wrap {
+  background : none !important;
 }
 
 #ninja_forms_form_15_save_progress {
