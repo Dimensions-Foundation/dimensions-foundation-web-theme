@@ -82,6 +82,11 @@ a {
 }
 
 ul {
+-webkit-margin-before: 0;
+}
+
+li {
+ padding-top: 1.2em;
 }
 
 /* * Image CSS */
@@ -148,6 +153,7 @@ img {
 /* General Naviation */
 
 .horizontal-menu {
+  -webkit-margin-before: 1em;
   display : inline-block;
 }
 
