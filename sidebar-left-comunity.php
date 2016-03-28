@@ -1,10 +1,12 @@
 <?php get_header(); ?>
 <?php /* Template Name: Sidebar - Community */ ?>
+
 <section class="page-container">
 <div class="display-inline-block">
   <div class="sidebar-container background-green-light">
     <div class=" fixed-position">
-<?php dynamic_sidebar( 'community_sidebar' ); ?>
+      <?php dynamic_sidebar( 'community_sidebar' ); ?>
+      <?php dynamic_sidebar( 'newsletter_sidebar' ); ?>
     </div>
   </div>
   <div class="content-container">

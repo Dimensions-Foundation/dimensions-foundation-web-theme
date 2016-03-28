@@ -1,5 +1,6 @@
 <?php get_header(); ?>
 <?php /* Template Name: Sidebar - Left */ ?>
+
 <section class="page-container">
 <div class="display-inline-block">
   <div class="sidebar-container background-green-light">
@@ -13,12 +14,13 @@
         <?php wp_list_pages( array('title_li'=>'','depth'=>1,'child_of'=>get_post_top_ancestor_id()) ); ?>
       </ul>
       <?php } ?>
+      <?php dynamic_sidebar( 'newsletter_sidebar' ); ?>
     </div>
   </div>
   <div class="content-container">
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
     <div class="page-feature-img">
-      <?php if ( has_post_thumbnail() ) { 
+      <?php if ( has_post_thumbnail() ) {
 	the_post_thumbnail( 'feature-image' ); } ?>
     </div>
     <h1>

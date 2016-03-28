@@ -1,10 +1,11 @@
 <?php get_header(); ?>
 <?php /* Template Name: Sidebar - Custom */ ?>
+
 <section class="page-container">
 <div class="display-inline-block">
   <div class="sidebar-container background-green-light">
     <div class=" fixed-position">
-        <?php $children = get_pages('child_of='.get_post_top_ancestor_id()); ?>
+      <?php $children = get_pages('child_of='.get_post_top_ancestor_id()); ?>
       <?php if( count( $children ) != 0 ) { ?>
       <ul class="sidebar-nav">
         <span class="sidebar-nav-title" >
@@ -13,7 +14,8 @@
         <?php wp_list_pages( array('title_li'=>'','depth'=>1,'child_of'=>get_post_top_ancestor_id()) ); ?>
       </ul>
       <?php } ?>
-<?php dynamic_sidebar( 'custom-sidebar' ); ?>
+      <?php dynamic_sidebar( 'custom-sidebar' ); ?>
+      <?php dynamic_sidebar( 'newsletter_sidebar' ); ?>
     </div>
   </div>
   <div class="content-container">
