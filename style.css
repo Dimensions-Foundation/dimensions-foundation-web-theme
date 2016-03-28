@@ -386,10 +386,11 @@ header {
   width   : 100%;
 }
 
-.fixed-position {
+/*  Removed until overlapping bug is fixed */
+/*.fixed-position {
   position : fixed;
-  width    : 20%;
-}
+ width    : 20%;
+} */
 
 /* Widgets */
 
@@ -402,7 +403,7 @@ header {
 }
 
 #menu-forms-menu li a {
-font-weight: normal;	
+font-weight: normal;
 }
 
 /*
