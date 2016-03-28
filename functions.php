@@ -75,7 +75,7 @@ function derf_add_widget_sidebar() {
 	/* Nature Explore Widgets */
 	register_sidebar( array(
 			'name'          => 'Newsletter Sidebar',
-			'id'            => 'newsletter-sidebar',
+			'id'            => 'newsletter_sidebar',
 			'before_widget' => '<div class="newsletter-sidebar-widget">',
 			'after_widget'  => '</div>',
 			'before_title'  => '<h3 class="newsletter-sidebar-header">',
