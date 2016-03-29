@@ -11,7 +11,7 @@
   <div class="content-container">
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
     <div class="page-feature-img">
-      <?php if ( has_post_thumbnail() ) {
+      <?php if ( has_post_thumbnail() ) { 
 	the_post_thumbnail( 'feature-image' ); } ?>
     </div>
     <h1>

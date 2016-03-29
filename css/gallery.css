@@ -69,6 +69,7 @@ img.alignright {
 }
 
 .gallery-columns-5 .gallery-item {
+	border-radius: 10px !important;
 	margin: 10px !important;
 	width: 16% !important;
 }

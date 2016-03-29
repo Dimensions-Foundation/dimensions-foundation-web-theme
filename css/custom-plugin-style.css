@@ -55,3 +55,7 @@ div.ninja-forms-form-wrap {
 .su-posts-list-loop li {
 	padding-top: .5em;
 }
+
+.su-slider-slide-title {
+display: none !important;	
+}
