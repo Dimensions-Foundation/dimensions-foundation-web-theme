@@ -1,3 +1,4 @@
+
 /*
   *
   * Theme Name: Dimensions Foundation Theme Template
@@ -23,13 +24,13 @@
 footer,
 header,
 section.page-container {
-  width     : 100%;
-  max-width : 960px;
-  margin    : 0 auto;
+	width : 100%;
+	max-width : 960px;
+	margin : 0 auto;
 }
 
 body {
-  margin : 0;
+	margin : 0;
 }
 
 body,
@@ -40,11 +41,8 @@ p,
 section,
 span,
 ul {
-  color       : #58585a;
-  font-family : "Helvetica Neue",
-                Helvetica,
-                Arial,
-                sans-serif;
+	color : #404040;
+	font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
 }
 
 h1,
@@ -53,54 +51,54 @@ h3,
 h4,
 h5,
 p {
-  margin  : 0;
-  padding : 0 10px 0;
+	margin : 0;
+	padding : 0 10px 0;
 }
 
 p {
-  padding-bottom : 10px;
-  font-size      : 12pt;
-  line-height    : 1.4;
+	padding-bottom : 10px;
+	font-size : 12pt;
+	line-height : 1.4;
 }
 
 h1 {
-  font-size : 24pt;
+	font-size : 24pt;
 }
 
 h2 {
-  font-size : 20pt;
+	font-size : 20pt;
 }
 
 h3 {
-  font-size : 16pt;
+	font-size : 16pt;
 }
 
 a {
-  color           : #174a7c;
-  text-decoration : none;
-  font-weight     : bold;
+	color : #174a7c;
+	text-decoration : none;
+	font-weight : bold;
 }
 
 ul {
--webkit-margin-before: 0;
+	-webkit-margin-before: 0;
 }
 
 li {
- padding-top: 1.2em;
+	padding-top: 1.2em;
 }
 
 /* * Image CSS */
 
 img {
-  border-radius : 25px;
+	border-radius : 15px;
 }
 
 .no-rounded-img {
-  border-radius : 0 !important;
+	border-radius : 0 !important;
 }
 
 .attachment {
-  margin-bottom : 0 !important;
+	margin-bottom : 0 !important;
 }
 
 /*
@@ -109,40 +107,39 @@ img {
 */
 
 .background-blue {
-  background-color : #174a7c !important;
+	background-color : #174a7c !important;
 }
 
 .background-brown {
-  background-color : #755725 !important;
+	background-color : #755725 !important;
 }
 
 .background-purple {
-  background-color : #57075e !important;
+	background-color : #57075e !important;
 }
 
 .background-orange {
-  background-color : #d35d2b !important;
+	background-color : #d35d2b !important;
 }
 
 .background-red {
-  background-color : #691c00 !important;
+	background-color : #691c00 !important;
 }
 
 .background-green-light {
-  background-color : #d2e7b5 !important;
+	background-color : #d2e7b5 !important;
 }
 
-
 .background-green-medium-light {
-  background-color : #9fc24d !important;
+	background-color : #9fc24d !important;
 }
 
 .background-green-medium {
-  background-color : #7a9943 !important;
+	background-color : #7a9943 !important;
 }
 
 .background-green-dark {
-  background-color : #1e6f41 !important;
+	background-color : #1e6f41 !important;
 }
 
 /*
@@ -153,67 +150,67 @@ img {
 /* General Naviation */
 
 .horizontal-menu {
-  -webkit-margin-before: 1em;
-  display : inline-block;
+	-webkit-margin-before: 1em;
+	display : inline-block;
 }
 
 .horizontal-menu li {
-  float      : left;
-  font-size  : 10pt;
-  list-style : none;
+	float : left;
+	font-size : 10pt;
+	list-style : none;
+	padding-top: 0;
 }
 
 .horizontal-menu li a {
-  color       : #FFFFFF;
-  font-weight : normal;
+	color : #FFFFFF;
+	font-weight : normal;
 }
 
 .line-break li a {
-  padding      : 3px 10px 3px;
-  border-right : 1px solid #FFFFFF;
+	padding : 3px 10px 3px;
+	border-right : 1px solid #FFFFFF;
 }
 
 .line-break li:last-child a {
-  border : none;
+	border : none;
 }
 
 /* Top Menu */
 
 .menu-top-menu-container {
-  margin-bottom : 50px;
-  padding       : 5px;
-  background    : #174a7c;
-  text-align    : center;
-  font-size     : 9pt;
+	margin-bottom : 50px;
+	padding : 5px;
+	background : #174a7c;
+	text-align : center;
+	font-size : 9pt;
 }
 
 /* Primary Menu */
 
 #primary-menu {
-  position     : relative;
-  top          : 13px;
-  float        : right;
-  margin-right : 25px;
+	position : relative;
+	top : 13px;
+	float : right;
+	margin-right : 25px;
 }
 
 #primary-menu li {
-  margin        : 0 2px 0;
-  padding       : 15px 20px 15px;
-  border-radius : 12px 12px 0 0;
-  background    : #174a7c;
+	margin : 0 2px 0;
+	padding : 15px 20px 15px;
+	border-radius : 12px 12px 0 0;
+	background : #174a7c;
 }
 
 #primary-menu li.current-menu-item,
 #primary-menu li.current-page-ancestor {
-  background : #FFFFFF !important;
+	background : #FFFFFF !important;
 }
 
 #primary-menu li.current-menu-item a,
 #primary-menu li.current-page-ancestor a {
-  color       : #174a7c !important;
-  font-weight : bold;
+	color : #174a7c !important;
+	font-weight : bold;
 }
-
 
 /* Sidebar Navigation */
 
@@ -224,26 +221,26 @@ img {
 
 #menu-classrooms li,
 .sidebar-nav li {
-  padding       : 10px 0 10px;
-  border-bottom : 1px solid #58585a;
-  font-size     : 11pt;
-  list-style    : none;
+	padding : 10px 0 10px;
+	border-bottom : 1px solid #58585a;
+	font-size : 11pt;
+	list-style : none;
 }
 
 #menu-classrooms li:last-child,
 .sidebar-nav li:last-child {
-  border : none;
+	border : none;
 }
 
 #menu-classrooms li a,
 .sidebar-nav li a {
-  font-weight : normal;
+	font-weight : normal;
 }
 
 .sidebar-nav-title li a {
-  padding     : 0;
-  font-size   : 14pt;
-  font-weight : bold;
+	padding : 0;
+	font-size : 14pt;
+	font-weight : bold;
 }
 
 /* Forms Siderbar Navigation */
@@ -252,12 +249,12 @@ img {
 }
 
 .forms-widget #menu-forms-menu li {
-  padding   : 5px;
-  font-size : 10pt;
+	padding : 5px;
+	font-size : 10pt;
 }
 
 .forms-widget #menu-forms-menu li a {
-  font-weight : normal;
+	font-weight : normal;
 }
 
 /*
@@ -266,7 +263,7 @@ img {
 */
 
 header {
-  height : 75px;
+	height : 75px;
 }
 
 .site-logo,
@@ -281,82 +278,82 @@ header {
 */
 
 .page-container {
-  border-radius : 25px;
-  background    : #FFFFFF;
-  box-shadow    : 2px 2px 2px #58585a;
+	border-radius : 25px;
+	background : #FFFFFF;
+	box-shadow : 2px 2px 2px #58585a;
 }
 
 .full-page-container {
-  padding : 150px 15px 15px;
+	padding : 150px 15px 15px;
 }
 
 /* Content Container */
 
 .content-container {
-  max-width : 600px;
-  margin    : 15px auto;
-  flex      : grow;
+	max-width : 600px;
+	margin : 15px auto;
+	flex : grow;
 }
 
 .page-feature-img {
-  width      : 100%;
-  margin     : 25px auto 15px;
-  text-align : center;
+	width : 100%;
+	margin : 25px auto 15px;
+	text-align : center;
 }
 
 .page-feature-img img {
-  width     : 100%;
-  max-width : 625px;
-  height    : 100%;
+	width : 100%;
+	max-width : 625px;
+	height : 100%;
 }
 
 /* Attachment.php */
 
 .center-content {
-  text-align : center;
+	text-align : center;
 }
 
 .attachment-title {
-  margin-bottom : 10px;
+	margin-bottom : 10px;
 }
 
 .attachment-content {
-  width          : 75%;
-  margin         : auto;
-  padding-bottom : 25px;
+	width : 75%;
+	margin : auto;
+	padding-bottom : 25px;
 }
 
 /* Comments */
 
 .comment-container {
-  padding    : 10px;
-  background : rgba(210,231,181,0.25);
+	padding : 10px;
+	background : rgba(210,231,181,0.25);
 }
 
 /* This is the textarea comment box */
 
 #comment {
-  width : 95%;
-  clear : both;
+	width : 95%;
+	clear : both;
 }
 
 /* This is each comment displayed */
 
 .comment {
-  padding       : 10px 0 10px;
-  border-bottom : 1px solid #58585a;
+	padding : 10px 0 10px;
+	border-bottom : 1px solid #58585a;
 }
 
 #respond {
-  padding-top : 10px;
+	padding-top : 10px;
 }
 
 .comment-author img {
-  display : none;
+	display : none;
 }
 
 .homepage-intro ~ p {
-    /*
+	/*
     * adding style to the intro excerpt on the homepage
     	* Can not find css for
     	*
@@ -366,30 +363,30 @@ header {
     	*
     <p> following the tag with the .homepage-intro class
   */
-  padding    : 0 15px 0;
-  color      : #78a22f;
-  font-style : italic;
+	padding : 0 15px 0;
+	color : #78a22f;
+	font-style : italic;
 }
 
 .body ul li {
-  margin : 10px 0 10px;
+	margin : 10px 0 10px;
 }
 
 /* Sidebar Container */
 
 .sidebar-container {
-  display       : block;
-  width         : 25%;
-  min-height    : 300px;
-  margin-top    : 125px;
-  padding       : 10px;
-  border-radius : 0 25px 0 0;
-  flex          : shrink;
+	display : block;
+	width : 25%;
+	min-height : 300px;
+	margin-top : 125px;
+	padding : 25px 10px 5px;
+	border-radius : 0 25px 0 0;
+	flex : shrink;
 }
 
 .display-inline-block {
-  display : flex;
-  width   : 100%;
+	display : flex;
+	width : 100%;
 }
 
 /*  Removed until overlapping bug is fixed */
@@ -401,15 +398,15 @@ header {
 /* Widgets */
 
 .community-widget {
-  margin-top : 15px;
+	margin-top : 15px;
 }
 
 .textwidget p img {
-  width : 100%;
+	width : 100%;
 }
 
 #menu-forms-menu li a {
-font-weight: normal;
+	font-weight: normal;
 }
 
 /*
@@ -418,7 +415,7 @@ font-weight: normal;
 */
 
 footer {
-  border-radius : 0 0 25px 25px;
+	border-radius : 0 0 25px 25px;
 }
 
 .footer-alert {
@@ -430,35 +427,36 @@ footer {
 }
 
 .footer-content {
-  display : flex;
+	display : flex;
 }
 
 .menu-footer-menu-container {
-  margin : auto;
+	margin : auto;
 }
 
 #footer-menu {
-  margin-bottom : 0;
+	-webkit-padding-start: 0;
+	margin-bottom : 0;
 }
 
 #footer-menu li {
-  padding : 10px 0px 10px;
+	padding : 10px 0px 10px;
 }
 
 #footer-menu li a {
-  padding : 5px 15px 5px;
+	padding : 5px 15px 5px;
 }
 
 #google_language_translator {
-  padding-bottom : 10px;
-  text-align     : center;
+	padding-bottom : 10px;
+	text-align : center;
 }
 
 .copyright p {
-  margin-bottom : 25px;
-  padding       : 10px 0 10px;
-  color         : #174a7c;
-  text-align    : center;
-  font-size     : 10pt;
-  font-weight   : bold;
+	margin-bottom : 25px;
+	padding : 10px 0 10px;
+	color : #174a7c;
+	text-align : center;
+	font-size : 10pt;
+	font-weight : bold;
 }

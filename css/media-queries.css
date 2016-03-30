@@ -26,8 +26,14 @@
 
 @media (max-width: 600px) {
 
+.content-container {
+margin-top: 0;	
+}
 .page-feature-img img {
 	border-radius : 0;
+}
+.page-feature-img {
+	margin: 0 0 10px;
 }
 
 #footer-menu li a {

@@ -1,5 +1,5 @@
 <?php
-if ( ! isset( $content_width ) ) $content_width = 1000;
+if ( ! isset( $content_width ) ) $content_width = 960;
 
 
 
