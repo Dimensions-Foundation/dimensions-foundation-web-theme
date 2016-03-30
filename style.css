@@ -6,13 +6,13 @@
   * Author: Michael Kracke
   * Author URI: http://www.michaelkracke.com
   * Description: This is a theme built for Dimensions Education Programs
-  * Version: 1.0.3
+  * Version: 1.0.4
   * License: GNU General Public License v2 or Later
   * License URI: http://www.gnu.org/licenses/gpl-2.0.html
   * Tags: flexible-width
   * Text Domain: dimensions-educational-research-foundation
   *
-  * Date of Version Change: March 29th, 2016
+  * Date of Version Change: March 30th, 2016
   *
 */
 
@@ -376,9 +376,9 @@ header {
 
 .sidebar-container {
 	display : block;
-	width : 25%;
+	width : 26%;
 	min-height : 300px;
-	margin-top : 125px;
+	margin-top : 135px;
 	padding : 25px 10px 5px;
 	border-radius : 0 25px 0 0;
 	flex : shrink;
