@@ -59,10 +59,18 @@ function derf_add_widget_sidebar() {
 	) );
 	register_sidebar( array(
 		'name'          => 'Custom Sidebar',
-		'id'            => 'custom-sidebar',
+		'id'            => 'custom_sidebar',
 		'before_widget' => '<div class="custom-sidebar-widget">',
 		'after_widget'  => '</div>',
 		'before_title'  => '<h4 class="custom-sidebar-header">',
+		'after_title'   => '</h4>',
+	) );
+	register_sidebar( array(
+		'name'          => 'Custom 2 Sidebar',
+		'id'            => 'custom-2_sidebar',
+		'before_widget' => '<div class="custom-2-sidebar-widget">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h4 class="custom-2-sidebar-header">',
 		'after_title'   => '</h4>',
 	) );
 	/* Dimensions Foundation Widgets */
@@ -97,7 +105,8 @@ function derf_register_theme_menus() {
 	array(
 		'primary-menu-location'	=> __( 'Primary Menu' ),
 		'top-menu-location'			=> __( 'Top Menu' ),
-		'footer-menu-location'	=> __( 'Footer Menu' )
+		'footer-menu-location'	=> __( 'Footer Menu' ),
+		'social-menu-location'	=> __( 'Social Menu' )
 		)
 	);
 }

@@ -25,7 +25,7 @@ footer,
 header,
 section.page-container {
 	width : 100%;
-	max-width : 960px;
+	max-width : 1000px;
 	margin : 0 auto;
 }
 
@@ -252,7 +252,7 @@ img {
 	padding : 5px;
 	font-size : 10pt;
 }
-
+#menu-world-forum-foundation-collaborations li a,
 .forms-widget #menu-forms-menu li a {
 	font-weight : normal;
 }
@@ -376,7 +376,7 @@ header {
 
 .sidebar-container {
 	display : block;
-	width : 26%;
+	width : 27%;
 	min-height : 300px;
 	margin-top : 135px;
 	padding : 25px 10px 5px;
@@ -430,7 +430,8 @@ footer {
 	display : flex;
 }
 
-.menu-footer-menu-container {
+.menu-footer-menu-container,
+.menu-social-menu-container {
 	margin : auto;
 }
 
@@ -445,6 +446,14 @@ footer {
 
 #footer-menu li a {
 	padding : 5px 15px 5px;
+}
+
+#social-menu {
+-webkit-padding-start: 0;	
+}
+
+#social-menu li a {
+border: none;	
 }
 
 #google_language_translator {

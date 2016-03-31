@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<?php /* Template Name: Sidebar - Custom */ ?>
+<?php /* Template Name: Sidebar - Custom 1 */ ?>
 
 <section class="page-container">
 <div class="display-inline-block">
@@ -14,7 +14,7 @@
         <?php wp_list_pages( array('title_li'=>'','depth'=>1,'child_of'=>get_post_top_ancestor_id()) ); ?>
       </ul>
       <?php } ?>
-      <?php dynamic_sidebar( 'custom-sidebar' ); ?>
+      <?php dynamic_sidebar( 'custom_sidebar' ); ?>
       <?php dynamic_sidebar( 'newsletter_sidebar' ); ?>
     </div>
   </div>

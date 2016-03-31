@@ -4,7 +4,6 @@
 <div class="display-inline-block">
   <div class="sidebar-container background-green-light">
     <?php dynamic_sidebar('home-sidebar'); ?>
-    <?php dynamic_sidebar( 'newsletter_sidebar' ); ?>
   </div>
   <div class="content-container">
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>

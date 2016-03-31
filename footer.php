@@ -26,7 +26,17 @@ if ( strstr( $site_url, 'natureexplore.org' ) ) {
 
     wp_nav_menu( $defaults );
     ?>
+     <?php $defaults = array(
+      'theme_location' 	=> 'social-menu-location',
+      'container'		=> 'nav',
+      'menu_id' 		    => 'social-menu',
+      'menu_class'		=> 'horizontal-menu line-break',
+    );
+
+    wp_nav_menu( $defaults );
+    ?>
   </div>
+  
   <?php echo do_shortcode('[google-translator]'); ?> </footer>
 </section>
 <div class="copyright">
