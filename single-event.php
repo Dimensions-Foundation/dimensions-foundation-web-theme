@@ -4,7 +4,7 @@
 <div class="display-inline-block">
   <div class="sidebar-container background-green-light">
     <div class=" fixed-position">
-      <?php dynamic_sidebar('community-sidebar'); ?>
+      <?php dynamic_sidebar('events_sidebar'); ?>
       <?php dynamic_sidebar( 'newsletter_sidebar' ); ?>
     </div>
   </div>
