@@ -38,16 +38,16 @@ function derf_add_widget_sidebar() {
 		'id'            => 'home_sidebar',
 		'before_widget' => '<div class="widget">',
 		'after_widget'  => '</div>',
-		'before_title'  => '<h3 class="widget-header">',
-		'after_title'   => '</h3>',
+		'before_title'  => '<h4 class="widget-header">',
+		'after_title'   => '</h4>',
 	) );
 	register_sidebar( array(
 		'name'          => 'Community Sidebar',
 		'id'            => 'community_sidebar',
 		'before_widget' => '<div class="community-widget">',
 		'after_widget'  => '</div>',
-		'before_title'  => '<h3 class="community-widget-header">',
-		'after_title'   => '</h3>',
+		'before_title'  => '<h4 class="community-widget-header">',
+		'after_title'   => '</h4>',
 	) );
 	register_sidebar( array(
 		'name'          => 'Footer Alert',
@@ -62,8 +62,8 @@ function derf_add_widget_sidebar() {
 		'id'            => 'custom-sidebar',
 		'before_widget' => '<div class="custom-sidebar-widget">',
 		'after_widget'  => '</div>',
-		'before_title'  => '<h3 class="custom-sidebar-header">',
-		'after_title'   => '</h3>',
+		'before_title'  => '<h4 class="custom-sidebar-header">',
+		'after_title'   => '</h4>',
 	) );
 	/* Dimensions Foundation Widgets */
 
