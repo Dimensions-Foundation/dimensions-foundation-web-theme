@@ -1,9 +1,11 @@
+
 #primary-menu.nep-primary-menu {
 	position : relative;
 	top: -3px;
 	float : right;
 	margin-right: 25px;
 }
+
 #primary-menu.nep-primary-menu li {
 	margin : 0 5px 0;
 	padding : 15px 5px 15px;
@@ -27,14 +29,18 @@
 }
 
 .site-logo.nep-logo img {
-margin-top: -25px;
-margin-left: 25px;
+	margin-top: -25px;
+	margin-left: 25px;
 }
-
 
 .site-logo.nep-logo,
 .site-logo.nep-logo img {
 	border-radius : 0;
 	max-width : 250px;
+}
 
+.nep-homepage-intro ~ p {
+	color: #FFFFFF;
+	font-style: italic;
+	font-size: 14pt;
 }

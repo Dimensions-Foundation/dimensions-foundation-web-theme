@@ -401,13 +401,20 @@ header {
 	margin-top : 15px;
 }
 
+.widget ul li a,
+#menu-forms-menu li a ,
+.community-widget ul li a {
+font-weight: normal;
+}
+.widget ul li,
+.community-widget ul li {
+padding-top: .75em;	
+}
+
 .textwidget p img {
 	width : 100%;
 }
 
-#menu-forms-menu li a {
-	font-weight: normal;
-}
 
 /*
   *

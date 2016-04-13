@@ -7,7 +7,7 @@
   </div>
   <div class="content-container">
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-    <p class="homepage-intro">
+    <p class="nep-homepage-intro">
       <?php the_excerpt(); ?>
     </p>
     <div class="page-feature-img">
