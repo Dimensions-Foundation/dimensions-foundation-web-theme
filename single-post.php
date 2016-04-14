@@ -2,13 +2,13 @@
 
 <section class="page-container">
 <div class="display-inline-block">
-  <div class="sidebar-container background-green-light">
+  <aside class="background-green-light">
     <div class=" fixed-position">
       <?php dynamic_sidebar('community-sidebar'); ?>
       <?php dynamic_sidebar( 'newsletter_sidebar' ); ?>
     </div>
-  </div>
-  <div class="content-container">
+  </aside>
+  <main>
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
     <div class="page-feature-img">
       <?php if ( has_post_thumbnail() ) { 
@@ -28,6 +28,6 @@
       <?php _e( 'Sorry, There is nothing to display. '); ?>
     </p>
     <?php endif; ?>
-  </div>
+  </main>
 </div>
 <?php get_footer(); ?>
