@@ -2,16 +2,16 @@
 
 <section class="page-container">
 <div class="display-inline-block">
-  <aside class="sidebar-container background-green-light">
+  <aside class="background-green-light">
     <div class=" fixed-position">
       <?php dynamic_sidebar('community-sidebar'); ?>
       <?php dynamic_sidebar( 'newsletter_sidebar' ); ?>
     </div>
   </aside>
-  <main class="content-container">
+  <main>
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
     <div class="page-feature-img">
-      <?php if ( has_post_thumbnail() ) {
+      <?php if ( has_post_thumbnail() ) { 
 	the_post_thumbnail( 'feature-image' ); } ?>
     </div>
     <h1>

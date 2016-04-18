@@ -1,12 +1,52 @@
 
 .site-logo.derf-logo {
-	margin : 10px 15px 10px;
-	padding-top: 25px;
+	margin : 0px 15px 10px;
+	padding-top: 15px;
 }
 
 .site-logo.derf-logo,
 .site-logo.derf-logo img {
 	border-radius : 0;
 	max-width : 275px;
+}
+
+.derf-homepage {
+	padding: 75px 0 0;
+}
+
+.derf-homepage-intro {
+	color: #174a7c;
+	font-size: 16pt;
+	font-style:italic;
+	padding: 10px;
+	text-align: center;
 	
+}
+.derf-homepage-background {
+	background: url('http://sandbox.dimensionsfoundation.org/wp-content/uploads/2016/04/derf-background.jpg');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	padding-top: 10px
+}
+
+.derf-homepage-highlighted-header {
+	padding: 10px 5px 10px !important;
+}
+
+.derf-homepage-spacer {
+	height: 75%;
+}
+
+.derf-homepage-background #gallery-1 .gallery-item {
+	margin: 5px;
+	max-width: 175px;
+	width: 20%;
+}
+
+.derf-homepage-background #gallery-1 .gallery-item .gallery-icon a img {
+	border-radius: 0;
+	max-height: 200px;
+	max-width: 200px;
+	height: 100%;
+	width: 100%;
 }
