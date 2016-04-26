@@ -4,6 +4,17 @@
 <div class="display-inline-block">
   <aside class="background-green-light">
     <div class=" fixed-position">
+    
+      <ul class="sidebar-nav">
+    <?php 
+	$parent_page_id = 16;
+	$parent_title = get_post($parent_page_id);
+	wp_list_pages( array(
+		'title_li' => 
+		'<span class="event-sidebar-nav-title"><a href="/workshops-conferences/">Workshops & Conferences</a></span>',
+    	'child_of' => $parent_page_id
+	) ); ?>
+    </ul>
       <?php dynamic_sidebar('events_sidebar'); ?>
       <?php dynamic_sidebar( 'newsletter_sidebar' ); ?>
     </div>
@@ -20,9 +31,10 @@
     <p>
       <?php the_content(); ?>
     </p>
+    <?php /* Remove Comment Section 
     <div class="comment-container">
       <?php comments_template(); ?>
-    </div>
+    </div> */ ?>
     <?php endwhile; else : ?>
     <p>
       <?php _e( 'There are currently no events. '); ?>

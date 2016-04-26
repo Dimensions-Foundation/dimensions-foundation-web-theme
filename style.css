@@ -236,12 +236,20 @@ img {
 .sidebar-nav li a {
 	font-weight : normal;
 }
-
+.event-sidebar-nav-title a,
 .sidebar-nav-title li a {
 	padding : 0;
 	font-size : 14pt;
-	font-weight : bold;
+	font-weight : bold !important;
 }
+.event-sidebar-nav-title {
+margin-bottom: 5px;	
+}
+
+.event-sidebar-nav-title ~ ul {
+	    -webkit-padding-start: 0;
+}
+
 
 /* Forms Siderbar Navigation */
 
