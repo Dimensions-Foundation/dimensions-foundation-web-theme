@@ -2,12 +2,12 @@
 
 <section class="page-container background-green-medium-light">
 <div class="display-inline-block">
-  <div class="sidebar-container background-green-light">
+  <aside class="background-green-light">
     <?php dynamic_sidebar('home-sidebar'); ?>
-  </div>
-  <div class="content-container">
+  </aside>
+  <main>
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-    <p class="nep-homepage-intro">
+    <p class="homepage-intro">
       <?php the_excerpt(); ?>
     </p>
     <div class="page-feature-img">
@@ -22,6 +22,6 @@
       <?php _e( 'Sorry, There is nothing to display. '); ?>
     </p>
     <?php endif; ?>
-  </div>
+  </main>
 </div>
 <?php get_footer(); ?>

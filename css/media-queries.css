@@ -12,7 +12,7 @@
 @media (max-width: 800px) {
 
 .menu-top-menu-container,
- .sidebar-container,
+ aside,
  header {
 	display : none;
 }
@@ -26,7 +26,7 @@
 
 @media (max-width: 600px) {
 
-.content-container {
+main {
 margin-top: 0;	
 }
 .page-feature-img img {

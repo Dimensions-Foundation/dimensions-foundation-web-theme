@@ -25,7 +25,7 @@ footer,
 header,
 section.page-container {
 	width : 100%;
-	max-width : 1000px;
+	max-width : 960px;
 	margin : 0 auto;
 }
 
@@ -198,7 +198,7 @@ img {
 	margin : 0 2px 0;
 	padding : 15px 20px 15px;
 	border-radius : 12px 12px 0 0;
-	background : #174a7c;
+	background : #7a9943;
 }
 
 #primary-menu li.current-menu-item,
@@ -289,7 +289,7 @@ header {
 
 /* Content Container */
 
-.content-container {
+main {
 	max-width : 600px;
 	margin : 15px auto;
 	flex : grow;
@@ -374,7 +374,7 @@ header {
 
 /* Sidebar Container */
 
-.sidebar-container {
+aside {
 	display : block;
 	width : 27%;
 	min-height : 300px;
@@ -401,20 +401,13 @@ header {
 	margin-top : 15px;
 }
 
-.widget ul li a,
-#menu-forms-menu li a ,
-.community-widget ul li a {
-font-weight: normal;
-}
-.widget ul li,
-.community-widget ul li {
-padding-top: .75em;	
-}
-
 .textwidget p img {
 	width : 100%;
 }
 
+#menu-forms-menu li a {
+	font-weight: normal;
+}
 
 /*
   *
