@@ -1,3 +1,4 @@
+
 .nep-homepage-intro ~ p {
 	color: #FFFFFF;
 	font-size: 1.2em;
@@ -5,18 +6,19 @@
 }
 
 .nep-homepage-sidebar {
-padding: 0 !important;	
-margin-top: 100px;
+	margin-top: 100px;
+	padding: 0 !important;
+	position: relative;
+	top: 22px;
 }
 
-.nep-homepage-sidebar > div, 
+.nep-homepage-sidebar > div,
 .nep-homepage-sidebar > div ~ div {
 	padding : 25px 10px 5px;
 }
 
 .nep-homepage-sidebar > div ~ div {
-border-radius : 0 25px 0 0;
-
+	border-radius : 0 25px 0 0;
 }
 
 #primary-menu.nep-primary-menu {
@@ -26,6 +28,7 @@ border-radius : 0 25px 0 0;
 	float : right;
 	margin-right: 1.7em;
 }
+
 #primary-menu.nep-primary-menu li {
 	margin : 0 3px 0;
 	padding : 15px 7px 15px;
@@ -49,14 +52,12 @@ border-radius : 0 25px 0 0;
 }
 
 .site-logo.nep-logo img {
-margin-top: -1.7em;
-margin-left: 1.7em;
+	margin-top: -1.7em;
+	margin-left: 1.7em;
 }
-
 
 .site-logo.nep-logo,
 .site-logo.nep-logo img {
 	border-radius : 0;
 	max-width : 16em;
-
 }
