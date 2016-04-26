@@ -19,7 +19,9 @@ function derf_theme_styles() {
 
 add_action( 'wp_enqueue_scripts', 'derf_theme_styles');
 
-// Add Editor Style
+/**
+ * Add Editor Style
+ */
 add_editor_style();
 
 /*
@@ -73,14 +75,20 @@ function derf_add_widget_sidebar() {
 		'before_title'  => '<h4 class="custom-2-sidebar-header">',
 		'after_title'   => '</h4>',
 	) );
-	/* Dimensions Foundation Widgets */
+	/**
+ 	 * Dimensions Foundation Widgets 
+	 */
 
 
 
-	/* Dimensions Education Programs Widgets */
+	/**
+ 	 * Dimensions Education Programs Widgets 
+	 */
 
 
-	/* Nature Explore Widgets */
+	/**
+ 	 * Nature Explore Widgets 
+	 */
 	register_sidebar( array(
 			'name'          => 'Newsletter Sidebar',
 			'id'            => 'newsletter_sidebar',
@@ -114,33 +122,39 @@ add_action( 'init', 'derf_register_theme_menus' );
 
 
 /**
-*  Customize Settings
+* Customize Settings
 */
 
-// Custom Background
+/**
+* Custom Background
+*/
 add_theme_support( 'custom-background' );
 
 
-// Custom Background
-add_theme_support( 'custom-header' );
-
-
-// Custom Post Thumbnails
+/**
+* Custom Post Thumbnails
+*/
 add_theme_support( 'post-thumbnails'  );
 add_image_size( 'blog-thumbnail', 200, 200 );
 
 
 
-// Add Page Exceprts
+/**
+* Add Page Exceprts
+*/
 add_action( 'init', 'my_add_excerpts_to_pages' );
 function my_add_excerpts_to_pages() {
 	add_post_type_support( 'page', 'excerpt' );
 }
 
-/* Add style to visual editor */
+/**
+* Add style to visual editor 
+*/
 add_editor_style('style.css');
 
-// Site LOGO
+/**
+* Site LOGO
+*/
 function themeslug_theme_customizer( $wp_customize ) {
 	$wp_customize->add_section( 'themeslug_logo_section' , array(
 		'title' 				=> __( 'Logo', 'themeslug' ),
@@ -180,24 +194,36 @@ function themeslug_theme_customizer( $wp_customize ) {
 		}
 
 
-// To give Editors access to the ALL Forms menu
+/** 
+ * Ninja Forms Plugin Alterations
+ */
+
+/**
+* To give Editors access to the ALL Forms menu
+*/
 function my_custom_change_ninja_forms_all_forms_capabilities_filter( $capabilities ) {
     $capabilities = "edit_pages";
     return $capabilities;
 }
 add_filter( 'ninja_forms_admin_parent_menu_capabilities', 'my_custom_change_ninja_forms_all_forms_capabilities_filter' );
 add_filter( 'ninja_forms_admin_all_forms_capabilities', 'my_custom_change_ninja_forms_all_forms_capabilities_filter' );
-// To give Editors access to ADD New Forms
+
+/**
+* To give Editors access to ADD New Forms
+*/
 function my_custom_change_ninja_forms_add_new_capabilities_filter( $capabilities ) {
     $capabilities = "edit_pages";
     return $capabilities;
 }
 add_filter( 'ninja_forms_admin_parent_menu_capabilities', 'my_custom_change_ninja_forms_add_new_capabilities_filter' );
 add_filter( 'ninja_forms_admin_add_new_capabilities', 'my_custom_change_ninja_forms_add_new_capabilities_filter' );
-/* To give Editors access to the Submissions - Simply replace ‘edit_posts’ in the code snippet below with the capability 
-that you would like to attach the ability to view/edit submissions to.Please note that all three filters are needed to 
-provide proper submission viewing/editing on the backend!
-*/
+
+/**
+ * To give Editors access to the Submissions
+ * Simply replace ‘edit_posts’ in the code snippet below with the capability
+ * that you would like to attach the ability to view/edit submissions to.
+ * Please note that all three filters are needed to provide proper submission viewing/editing on the backend!
+	*/
 function nf_subs_capabilities( $cap ) {
     return 'edit_posts';
 }
@@ -206,11 +232,4 @@ add_filter( 'ninja_forms_admin_parent_menu_capabilities', 'nf_subs_capabilities'
 add_filter( 'ninja_forms_admin_menu_capabilities', 'nf_subs_capabilities' );
 
 
-
-
-
-
-
-
-
-		?>
+/* END FUNCTIONS.PHP */ ?>
