@@ -2,12 +2,16 @@
 
 <section class="page-container background-green-medium-light">
 <div class="display-inline-block">
-  <aside class="background-green-light">
+
+  <aside class="nep-homepage-sidebar">
+  <?php dynamic_sidebar( 'above_home_sidebar' ); ?>
+  <div  class="background-green-light" >
     <?php dynamic_sidebar('home-sidebar'); ?>
+    </div>
   </aside>
   <main>
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-    <p class="homepage-intro">
+    <p class="nep-homepage-intro">
       <?php the_excerpt(); ?>
     </p>
     <div class="page-feature-img">
