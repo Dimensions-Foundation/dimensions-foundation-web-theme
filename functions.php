@@ -9,6 +9,7 @@ if ( ! isset( $content_width ) ) $content_width = 960;
 function derf_theme_styles() {
 	wp_enqueue_style( 'main_css', get_template_directory_uri() . '/style.css' );
 	wp_enqueue_style( 'gallery_css', get_template_directory_uri() . '/css/gallery.css' );
+	wp_enqueue_style( 'normal_css', get_template_directory_uri() . '/css/normalize.css' );
 	wp_enqueue_style( 'fonts_css', get_template_directory_uri() . '/css/fonts.css' );
 	wp_enqueue_style( 'custom_plugin_style_css', get_template_directory_uri() . '/css/custom-plugin-style.css' );
 	wp_enqueue_style( 'media_queries_css', get_template_directory_uri() . '/css/media-queries.css' );
@@ -76,19 +77,28 @@ function derf_add_widget_sidebar() {
 		'after_title'   => '</h4>',
 	) );
 	/**
- 	 * Dimensions Foundation Widgets 
+ 	 * Dimensions Foundation Widgets
 	 */
 
 
 
 	/**
- 	 * Dimensions Education Programs Widgets 
+ 	 * Dimensions Education Programs Widgets
 	 */
 
 
 	/**
- 	 * Nature Explore Widgets 
+ 	 * Nature Explore Widgets
 	 */
+	 	register_sidebar( array(
+		'name'          => 'Above Home Sidebar',
+		'id'            => 'above_home_sidebar',
+		'before_widget' => '<div class="widget">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h4 class="widget-header">',
+		'after_title'   => '</h4>',
+	) );
+
 	register_sidebar( array(
 			'name'          => 'Newsletter Sidebar',
 			'id'            => 'newsletter_sidebar',
@@ -148,7 +158,7 @@ function my_add_excerpts_to_pages() {
 }
 
 /**
-* Add style to visual editor 
+* Add style to visual editor
 */
 add_editor_style('style.css');
 
@@ -194,7 +204,7 @@ function themeslug_theme_customizer( $wp_customize ) {
 		}
 
 
-/** 
+/**
  * Ninja Forms Plugin Alterations
  */
 
