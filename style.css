@@ -125,7 +125,7 @@ body {
 
 #primary-menu {
 	position : relative;
-	top : 1.19em;
+	top : .61em;
 	float : right;
 	margin-right : 2.3em;
 }
@@ -179,7 +179,7 @@ body {
 	font-weight : bold !important;
 }
 .event-sidebar-nav-title {
-margin-bottom: .3em;	
+margin-bottom: .3em;
 }
 
 .event-sidebar-nav-title ~ ul {
@@ -353,12 +353,12 @@ aside {
 .community-widget ul li a,
 #menu-forms-menu li a {
 	font-weight: normal;
-	
+
 }
 .widget ul li,
 .community-widget ul li,
 #menu-forms-menu li {
-	
+
 padding-top: .75em;
 }
 
@@ -389,7 +389,7 @@ footer {
 }
 
 .menu-social-menu-container {
-margin-top: 1.3em;	
+margin-top: 1.3em;
 }
 
 #footer-menu {
@@ -406,11 +406,11 @@ margin-top: 1.3em;
 }
 
 #social-menu {
--webkit-padding-start: 0;	
+-webkit-padding-start: 0;
 }
 
 #social-menu li a {
-border: none;	
+border: none;
 }
 
 #google_language_translator {
