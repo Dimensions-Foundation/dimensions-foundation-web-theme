@@ -10,6 +10,10 @@
 }
 
 @media (max-width: 800px) {
+	
+	#wprmenu_bar {
+	display: block !important;	
+	}
 
 .menu-top-menu-container,
  aside,
@@ -30,7 +34,7 @@ main {
 margin-top: 0;	
 }
 .page-feature-img img {
-	border-radius : 0;
+	border-radius : 0 !important;
 }
 .page-feature-img {
 	margin: 0 0 10px;
