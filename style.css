@@ -125,7 +125,7 @@ body {
 
 #primary-menu {
 	position : relative;
-	top : .61em;
+	top : 1.19em;
 	float : right;
 	margin-right : 2.3em;
 }
@@ -349,12 +349,6 @@ aside {
 	width : 100%;
 }
 
-.widget ul li a,
-.community-widget ul li a,
-#menu-forms-menu li a {
-	font-weight: normal;
-
-}
 .widget ul li,
 .community-widget ul li,
 #menu-forms-menu li {
