@@ -57,10 +57,16 @@ div.ninja-forms-form-wrap {
 }
 
 .su-slider-slide-title {
-display: none !important;	
+display: none !important;
+}
+.su-posts li a {
+font-weight: normal;
 }
 
+.su-column-size-2-3 {
+width: 60.0% !important;
+}
 
-.su-posts li a {
-font-weight: normal;	
+.su-column-size-1-3 {
+width: 32.0% !important;
 }

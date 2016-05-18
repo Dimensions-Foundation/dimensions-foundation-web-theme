@@ -155,7 +155,11 @@ body {
 	margin-bottom: 0;
 }
 
-#menu-classrooms li,
+aside .fixed-position div div ul {
+-webkit-padding-start: 10px;
+}
+
+aside .fixed-position div div ul li,
 .sidebar-nav li {
 	padding : 10px 0 10px;
 	border-bottom : 1px solid #58585a;
@@ -163,15 +167,11 @@ body {
 	list-style : none;
 }
 
-#menu-classrooms li:last-child,
+aside .fixed-position div div ul li:last-child,
 .sidebar-nav li:last-child {
 	border : none;
 }
-#menu-helpful-links li a,
-#menu-classrooms li a,
-.sidebar-nav li a {
-	font-weight : normal;
-}
+
 .event-sidebar-nav-title a,
 .sidebar-nav-title li a {
 	padding : 0;
@@ -189,16 +189,10 @@ margin-bottom: .3em;
 
 /* Forms Siderbar Navigation */
 
-.forms-widget #menu-forms-menu {
-}
 
 .forms-widget #menu-forms-menu li {
 	padding : .3em;
 	font-size : .8em;
-}
-#menu-world-forum-foundation-collaborations li a,
-.forms-widget #menu-forms-menu li a {
-	font-weight : normal;
 }
 
 /*
