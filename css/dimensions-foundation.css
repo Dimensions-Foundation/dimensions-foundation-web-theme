@@ -9,6 +9,10 @@
 	border-radius : 0;
 	max-width : 275px;
 }
+.derf-primary-menu {
+top: .61em !important;
+
+}
 
 .derf-homepage {
 	padding: 75px 0 0;
@@ -16,16 +20,22 @@
 
 .derf-homepage-intro {
 	color: #174a7c;
+	clear: both;
+	display: block;
+	float: right;
 	font-size: 16pt;
 	font-style:italic;
-	padding: 10px;
+margin-top: -75px;
+	padding: 0 10px 20px;
 	text-align: center;
-	
+	width: 60%;
 }
 .derf-homepage-background {
 	background: url('http://sandbox.dimensionsfoundation.org/wp-content/uploads/2016/04/derf-background.jpg');
 	background-size: 100%;
 	background-repeat: no-repeat;
+	clear: both;
+	display: block;
 	padding-top: 10px
 }
 
