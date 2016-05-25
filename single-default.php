@@ -1,4 +1,4 @@
-
+<?php get_header(); ?>
 
 <section class="page-container">
 	<div class="display-inline-block">
@@ -30,3 +30,4 @@
 				<?php endif; ?>
 			</main>
 		</div>
+<?php get_footer(); ?>

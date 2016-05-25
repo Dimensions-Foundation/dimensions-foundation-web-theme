@@ -1,3 +1,4 @@
+<?php get_header(); ?>
 <section class="page-container">
 	<div class="display-inline-block">
 		<aside class="background-green-light">
@@ -33,3 +34,4 @@
 					<?php endif; ?>
 				</main>
 			</div>
+<?php get_footer(); ?>
