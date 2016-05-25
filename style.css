@@ -155,7 +155,11 @@ body {
 	margin-bottom: 0;
 }
 
-#menu-classrooms li,
+aside .fixed-position div div ul {
+-webkit-padding-start: 10px;
+}
+
+aside .fixed-position div div ul li,
 .sidebar-nav li {
 	padding : 10px 0 10px;
 	border-bottom : 1px solid #58585a;
@@ -163,15 +167,11 @@ body {
 	list-style : none;
 }
 
-#menu-classrooms li:last-child,
+aside .fixed-position div div ul li:last-child,
 .sidebar-nav li:last-child {
 	border : none;
 }
-#menu-helpful-links li a,
-#menu-classrooms li a,
-.sidebar-nav li a {
-	font-weight : normal;
-}
+
 .event-sidebar-nav-title a,
 .sidebar-nav-title li a {
 	padding : 0;
@@ -179,7 +179,7 @@ body {
 	font-weight : bold !important;
 }
 .event-sidebar-nav-title {
-margin-bottom: .3em;	
+margin-bottom: .3em;
 }
 
 .event-sidebar-nav-title ~ ul {
@@ -189,16 +189,10 @@ margin-bottom: .3em;
 
 /* Forms Siderbar Navigation */
 
-.forms-widget #menu-forms-menu {
-}
 
 .forms-widget #menu-forms-menu li {
 	padding : .3em;
 	font-size : .8em;
-}
-#menu-world-forum-foundation-collaborations li a,
-.forms-widget #menu-forms-menu li a {
-	font-weight : normal;
 }
 
 /*
@@ -349,16 +343,10 @@ aside {
 	width : 100%;
 }
 
-.widget ul li a,
-.community-widget ul li a,
-#menu-forms-menu li a {
-	font-weight: normal;
-	
-}
 .widget ul li,
 .community-widget ul li,
 #menu-forms-menu li {
-	
+
 padding-top: .75em;
 }
 
@@ -389,7 +377,7 @@ footer {
 }
 
 .menu-social-menu-container {
-margin-top: 1.3em;	
+margin-top: 1.3em;
 }
 
 #footer-menu {
@@ -406,11 +394,11 @@ margin-top: 1.3em;
 }
 
 #social-menu {
--webkit-padding-start: 0;	
+-webkit-padding-start: 0;
 }
 
 #social-menu li a {
-border: none;	
+border: none;
 }
 
 #google_language_translator {

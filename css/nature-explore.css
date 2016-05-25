@@ -6,10 +6,9 @@
 }
 
 .nep-homepage-sidebar {
-	margin-top: 100px;
+	margin-top: 75px;
 	padding: 0 !important;
 	position: relative;
-	top: 22px;
 }
 
 .nep-homepage-sidebar > div,
@@ -19,6 +18,17 @@
 
 .nep-homepage-sidebar > div ~ div {
 	border-radius : 0 25px 0 0;
+}
+
+.above-homepage-sidebar-button-row .su-column .su-column-inner {
+	text-align: center;
+
+}
+
+.above-homepage-sidebar-button-row .su-column .su-column-inner img {
+	height: 100px;
+	width: 100px;
+
 }
 
 #primary-menu.nep-primary-menu {

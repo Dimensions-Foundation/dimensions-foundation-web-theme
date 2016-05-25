@@ -10,10 +10,14 @@
 }
 
 @media (max-width: 800px) {
-	
+
 	#wprmenu_bar {
-	display: block !important;	
+	display: block !important;
 	}
+
+#wprmenu_menu_ul li {
+background-color: transparent !important;
+}
 
 .menu-top-menu-container,
  aside,
@@ -31,7 +35,7 @@
 @media (max-width: 600px) {
 
 main {
-margin-top: 0;	
+margin-top: 0;
 }
 .page-feature-img img {
 	border-radius : 0 !important;
