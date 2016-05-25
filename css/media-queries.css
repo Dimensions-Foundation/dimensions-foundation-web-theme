@@ -19,6 +19,9 @@
 background-color: transparent !important;
 }
 
+main {
+width: 100%;
+}
 .menu-top-menu-container,
  aside,
  header {
