@@ -11,7 +11,7 @@ p,
 section,
 span,
 ul {
-	color : #404040;
+	color : #58585a;;
 	font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
 }
 
@@ -20,15 +20,18 @@ h2,
 h3,
 h4,
 h5,
-p {
+h6  {
+	font-weight: bold;
 	margin : 0;
 	padding : 0 10px 0;
 }
 
 p {
-	padding-bottom : 10px;
+
 	font-size : 1em;
 	line-height : 1.4;
+	margin: 0;
+	padding : 0 10px 10px;
 }
 
 h1 {
@@ -43,6 +46,14 @@ h3 {
 	font-size : 1.4em;
 }
 
+h4, h5 {
+	font-size: 1.2em;
+}
+
+h5 {
+	color: #7a9943;
+}
+
 a {
 	color : #174a7c;
 	text-decoration : none;
@@ -50,7 +61,7 @@ a {
 }
 
 li a {
-font-weight: normal;
+	font-weight: normal;
 }
 
 ul {

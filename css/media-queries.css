@@ -29,6 +29,10 @@ background-color: transparent !important;
  footer {
 	border-radius : 0;
 }
+.derf-homepage-intro {
+font-size: 1em;
+width: 95%  !important;
+}
 /* End Media-Query */
 }
 
@@ -52,6 +56,16 @@ margin-top: 0;
 .school-closing {
 	font-size : 9pt;
 }
+
+
+.derf-homepage-highlighted-header {
+font-size: .65em;
+}
+
+.derf-homepage-spacer {
+height: 250px !important
+
+}
 /* End Media-Query */
 }
 
@@ -64,5 +78,10 @@ margin-top: 0;
 .gallery-columns-5 .gallery-item .gallery-icon img {
 	border-radius: 10px;
 }
+.derf-homepage-spacer {
+height: 175px !important
+
+}
+
 /* End Media-Query */
 }

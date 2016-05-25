@@ -23,7 +23,7 @@ add_action( 'wp_enqueue_scripts', 'derf_theme_styles');
 /**
  * Add Editor Style
  */
-add_editor_style();
+add_editor_style( get_template_directory_uri() . '/css/fonts.css' );
 
 /*
  * Register Widgets
