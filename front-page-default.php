@@ -1,7 +1,6 @@
 <?php get_header(); ?>
 
-<section class="page-container">
-<div class="display-inline-block">
+<section class="page-container background-white">
   <aside class="background-green-light">
     <?php dynamic_sidebar('home-sidebar'); ?>
   </aside>
@@ -14,14 +13,8 @@
       <?php if ( has_post_thumbnail() ) {
           the_post_thumbnail( 'feature-image' ); } ?>
     </div>
-    <p>
       <?php the_content(); ?>
-    </p>
-    <?php endwhile; else : ?>
-    <p>
-      <?php _e( 'Sorry, There is nothing to display. '); ?>
-    </p>
-    <?php endif; ?>
+
+    <?php endwhile;endif; ?>
   </main>
-</div>
 <?php get_footer(); ?>

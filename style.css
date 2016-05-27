@@ -1,5 +1,6 @@
 
 /*
+* ------------------------------------------------------------------------------
 *
 * Theme Name: DERF WordPress Theme
 * Theme URI: http://www.dimensionsfoundation.org
@@ -14,11 +15,16 @@
 *
 * Date of Version Change: May 25th, 2016
 *
+* ------------------------------------------------------------------------------
 */
-/*
-*
-* Colors
+
+/* -----------------------------------------------------------------------------
+* Static Colors
+* ------------------------------------------------------------------------------
 */
+.background-blue-light {
+	background-color:  #0086be !important;
+}
 
 .background-blue {
 	background-color : #174a7c !important;
@@ -61,9 +67,9 @@
 }
 
 
-/*
-*
+/* -----------------------------------------------------------------------------
 * Theme Setup
+* ------------------------------------------------------------------------------
 */
 body {
 	display: flex;
@@ -79,7 +85,7 @@ header, .page-container {
 
 .page-container {
 	border-radius:  25px 25px 25px 25px;
-box-shadow: 3px 3px 5px #333333;
+	box-shadow: 3px 3px 5px #333333;
 	flex-wrap: wrap;
 
 }
@@ -92,6 +98,10 @@ box-shadow: 3px 3px 5px #333333;
 	margin-top: -15px;
 }
 
+/* -----------------------------------------------------------------------------
+* Navigation
+* ------------------------------------------------------------------------------
+*/
 .horizontal-menu {
 	display: inline-flex;
 	flex-wrap: wrap;
@@ -102,6 +112,8 @@ box-shadow: 3px 3px 5px #333333;
 	margin: 5px 10px 5px;
 	text-align: center;
 }
+
+/* ----------- Top Menu ----------- */
 #top-menu-container {
 	display: flex;
 	height: 50px;
@@ -124,6 +136,7 @@ box-shadow: 3px 3px 5px #333333;
 
 }
 
+/* ----------- Primary Menu ----------- */
 #primary-menu-container {
 	display: flex;
 	justify-content: flex-end;
@@ -140,7 +153,6 @@ box-shadow: 3px 3px 5px #333333;
 #primary-menu li {
 	border-radius: 12px 12px 0 0 ;
 	display: flex;
-	flex: 1;
 	padding: 10px 5px 10px;
 	margin: 5px 5px 0;
 	align-self:stretch;
@@ -152,6 +164,14 @@ box-shadow: 3px 3px 5px #333333;
 }
 
 
+#full-page-container {
+	padding:  125px 50px 50px;
+}
+
+/* -----------------------------------------------------------------------------
+*   Sidebar
+* ------------------------------------------------------------------------------
+*/
 aside {
 	display: flex !important;
 	border-radius: 0 25px 0 0;
@@ -171,18 +191,6 @@ aside {
 	padding: 25px 15px 25px;
 }
 
-.textwidget img {
-	max-width: 225px;
-
-	margin: 5px;
-
-}
-
-.sidebar-nav {
-	-webkit-padding-start: 10px;
-	margin-bottom: 0;
-}
-
 aside .fixed-position div div ul {
 	-webkit-padding-start: 10px;
 }
@@ -200,33 +208,73 @@ aside .fixed-position div div ul li:last-child,
 	border : none;
 }
 
+/* ----------- Sidebar Nav ----------- */
 .sidebar-nav-title li a {
 	font-size: 12pt;
 	font-weight: bold !important;
 }
 
-.widget ul li {
-padding-top: .75em;
-
+.sidebar-nav {
+	-webkit-padding-start: 10px;
+	margin-bottom: 0;
 }
+
+/* ----------- Sidebar Widgets ----------- */
+
+.widget-header {
+	margin-top: 15px;
+}
+
+.textwidget img {
+	max-width: 225px;
+	margin: 5px;
+}
+
+
+.widget ul li {
+	padding-top: .75em;
+}
+/* -----------------------------------------------------------------------------
+* Main Content
+* ------------------------------------------------------------------------------
+*/
+
 main {
 	flex:3  475px;
 	padding: 50px 25px 50px;
 	width: 95%;
 }
 
-.page-feature-img img {
-max-width: 600px;
-width: 100%;
-
+.page-feature-img {
+	margin-bottom: 15px;
+	text-align: center;
 }
+
+.page-feature-img img {
+	height: 100%;
+	max-width: 600px;
+	width: 100%;
+}
+
+/* -----------------------------------------------------------------------------
+* Footer
+* ------------------------------------------------------------------------------
+*/
 
 footer {
 	border-radius: 0 0  24px 24px;
-width: 100%;
+	width: 100%;
 }
 footer div {
 	flex: 1;
+}
+
+.footer-alert {
+	background-color: #7a9943;
+	color: #ffffff;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
 }
 
 #footer-content  {
@@ -244,12 +292,13 @@ footer div {
 #footer-menu-container {
 	display: flex;
 	align-items: center;
-	flex: 2;
+	flex: 6;
 }
 
+#footer-menu li { font-size: 10pt}
 
 #social-menu-container {
-	flex: 1;
+	flex:1;
 }
 
 #copyright {

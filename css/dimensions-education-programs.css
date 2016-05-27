@@ -4,40 +4,15 @@
  */
 
 
-#primary-menu .about-us-nav {
-  background-color : #f15d22;
+.dep-primary-menu {
+width: 85% !important;
 }
 
-#primary-menu .programs-nav {
-  background-color : #7a1600;
-}
-
-#primary-menu .for-families-nav {
-  background-color : #78a22f;
-}
-
-#primary-menu .involvement-nav {
-  background-color : #174a7c;
-}
-
-#primary-menu .calendar-nav {
-  background-color : #80561b;
-}
-
-#primary-menu .donate-nav {
-  background-color : #0086be;
+.dep-primary-menu li {
+padding:  15px !important
 }
 
 
-.site-logo.dep-logo {
-	width : 100%;
-	max-width : 250px;
-	margin : 10px 25px 10px;
-}
-
-.site-logo.dep-logo img {
-	border-radius : 0;
-}
 
 #menu-forms-menu li,
 #menu-forms-menu li a {
