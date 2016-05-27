@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<section class="page-container">
+<section class="page-container background-white">
 <div class="full-page-container center-content">
   <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
   <?php if (wp_attachment_is_image($post->id)) {

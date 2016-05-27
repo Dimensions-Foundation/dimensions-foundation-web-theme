@@ -1,7 +1,6 @@
 
 <?php get_header(); ?>
-<section class="page-container">
-<div class="display-inline-block">
+<section class="page-container background-white">
   <aside class="background-green-light">
     <div class=" fixed-position">
 
@@ -41,5 +40,4 @@
     </p>
     <?php endif; ?>
   </main>
-</div>
 <?php get_footer(); ?>

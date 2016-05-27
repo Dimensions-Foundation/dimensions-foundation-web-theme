@@ -1,21 +1,14 @@
 <?php get_header(); ?>
 
 
-<section class="page-container">
-<div class="display-inline-block">
+<section class="page-container background-white">
   <aside class="background-green-light">
     <div class=" fixed-position">
-  <?php dynamic_sidebar('home-sidebar'); ?>
+      <?php dynamic_sidebar('home-sidebar'); ?>
     </div>
   </aside>
   <main>
-    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-            <?php woocommerce_content(); ?>
-    <?php endwhile; else : ?>
-    <p>
-      <?php _e( 'Sorry, There is nothing to display. '); ?>
-    </p>
-    <?php endif; ?>
+    <?php woocommerce_content(); ?>
   </main>
-</div>
-<?php get_footer(); ?>
+
+  <?php get_footer(); ?>

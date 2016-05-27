@@ -1,90 +1,23 @@
-
-/* CSS Document */
-
-@media (max-width: 850px) {
-
-#primary-menu li {
-	padding : 10px 10px 10px;
-}
-/* End Media-Query */
-}
-
 @media (max-width: 800px) {
 
-	#wprmenu_bar {
-	display: block !important;
-	}
+  #wprmenu_bar {
+    display: block !important;
+  }
 
-#wprmenu_menu_ul li {
-background-color: transparent !important;
-}
+  #wprmenu_menu_ul li {
+    background-color: transparent !important;
+  }
 
-main {
-width: 100%;
+.page-container, footer {
+border-radius: 0;
 }
-.menu-top-menu-container,
- aside,
- header {
-	display : none;
-}
-
-.page-container,
- footer {
-	border-radius : 0;
-}
-.derf-homepage-intro {
-font-size: 1em;
-width: 95%  !important;
-}
-/* End Media-Query */
-}
-
-@media (max-width: 600px) {
-
-main {
-margin-top: 0;
-}
-.page-feature-img img {
-	border-radius : 0 !important;
-}
-.page-feature-img {
-	margin: 0 0 10px;
-}
-
-#footer-menu li a {
-	margin : 10px 0 10px;
-	border : none;
-}
-
-.school-closing {
-	font-size : 9pt;
-}
-
-
-.derf-homepage-highlighted-header {
-font-size: .65em;
-}
-
-.derf-homepage-spacer {
-height: 250px !important
-
-}
-/* End Media-Query */
-}
-
-@media (max-width: 500px) {
-
-.gallery-columns-5 .gallery-item {
-	width: 15% !important;
-}
-
-.gallery-columns-5 .gallery-item .gallery-icon img {
-	border-radius: 10px;
-}
-.derf-homepage-spacer {
-height: 175px !important
-
-}
-
-/* End Media-Query */
+  main {
+    padding:15px 10px 15px;
+    width: 90%;
+  }
+  #top-menu-container,
+  aside,
+  header {
+    display : none !important;
+  }
 }

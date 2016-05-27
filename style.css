@@ -1,46 +1,23 @@
 
 /*
-  *
-  * Theme Name: Dimensions Foundation Theme Template
-  * Theme URI: http://www.dimensionsfoundation.org
-  * Author: Michael Kracke
-  * Author URI: http://www.michaelkracke.com
-  * Description: This is a theme built for Dimensions Education Programs
-  * Version: 1.1.0
-  * License: GNU General Public License v2 or Later
-  * License URI: http://www.gnu.org/licenses/gpl-2.0.html
-  * Tags: flexible-width
-  * Text Domain: dimensions-educational-research-foundation
-  *
-  * Date of Version Change: May 24th, 2016
-  *
+*
+* Theme Name: DERF WordPress Theme
+* Theme URI: http://www.dimensionsfoundation.org
+* Author: Michael Kracke
+* Author URI: http://www.michaelkracke.com
+* Description: This is a theme built for Dimensions Education Programs
+* Version: 2.0.0
+* License: GNU General Public License v2 or Later
+* License URI: http://www.gnu.org/licenses/gpl-2.0.html
+* Tags: flexible-width
+* Text Domain: dimensions-educational-research-foundation
+*
+* Date of Version Change: May 25th, 2016
+*
 */
-
 /*
-  *
-  * Theme Setup
-*/
-
-footer,
-header,
-section.page-container {
-	width : 100%;
-	max-width : 60em;
-	margin : 0 auto;
-}
-
-body {
-	margin : 0;
-	font-size: 100%;
-		-webkit-text-size-adjust: 100%;
-	-ms-text-size-adjust:     100%;
-}
-
-
-
-/*
-  *
-  * Colors
+*
+* Colors
 */
 
 .background-blue {
@@ -79,76 +56,127 @@ body {
 	background-color : #1e6f41 !important;
 }
 
-/*
-  *
-  * Navigation
-*/
+.background-white {
+	background-color : #ffffff !important;
+}
 
-/* General Naviation */
+
+/*
+*
+* Theme Setup
+*/
+body {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+header, .page-container {
+	display: flex;
+	max-width: 960px;
+	margin: auto;
+	width: 100%;
+}
+
+.page-container {
+	border-radius:  25px 25px 25px 25px;
+box-shadow: 3px 3px 5px #333333;
+	flex-wrap: wrap;
+
+}
+
+.site-logo a img {
+	width: 225px;
+	position: absolute;
+
+	margin-left: 25px;
+	margin-top: -15px;
+}
 
 .horizontal-menu {
-	-webkit-margin-before: 1em;
-	display : inline-block;
+	display: inline-flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
 }
 
 .horizontal-menu li {
-	float : left;
-	font-size : .8em;
-	list-style : none;
-	padding-top: 0;
+	margin: 5px 10px 5px;
+	text-align: center;
+}
+#top-menu-container {
+	display: flex;
+	height: 50px;
+	margin-bottom: 50px;
+	text-align: center;
+	width: 100%;
 }
 
-.horizontal-menu li a {
-	color : #FFFFFF;
-	font-weight : normal;
+#top-menu {
+	margin: auto;
+	justify-content: center;
+	width: 100%;
+}
+#top-menu li {
+	padding: 10px 5px 10px;
 }
 
-.line-break li a {
-	padding : .19em 10px .19em;
-	border-right : 1px solid #FFFFFF;
+#top-menu li a {
+	font-size: 9pt;
+
 }
 
-.line-break li:last-child a {
-	border : none;
+#primary-menu-container {
+	display: flex;
+	justify-content: flex-end;
+	width: 100%;
 }
 
-/* Top Menu */
-
-.menu-top-menu-container {
-	margin-bottom : 50px;
-	padding : .3em;
-	background : #174a7c;
-	text-align : center;
-}
-
-/* Primary Menu */
 
 #primary-menu {
-	position : relative;
-	top : 1.19em;
-	float : right;
-	margin-right : 2.3em;
+	justify-content: flex-end;
+	margin: 0 20px 0 0;
+	width: 65%;
 }
 
 #primary-menu li {
-	margin : 0 2px 0;
-	padding : 1.3em 20px 1.3em;
-	border-radius : 12px 12px 0 0;
-	background : #7a9943;
+	border-radius: 12px 12px 0 0 ;
+	display: flex;
+	flex: 1;
+	padding: 10px 5px 10px;
+	margin: 5px 5px 0;
+	align-self:stretch;
+
+}
+#primary-menu li a {
+	align-self: center;
+	font-size: 10pt ;
 }
 
-#primary-menu li.current-menu-item,
-#primary-menu li.current-page-ancestor {
-	background : #FFFFFF !important;
+
+aside {
+	display: flex !important;
+	border-radius: 0 25px 0 0;
+	flex: 2 225px ;
+	margin-top: 125px;
+	max-width: 275px;
+
+
 }
 
-#primary-menu li.current-menu-item a,
-#primary-menu li.current-page-ancestor a {
-	color : #174a7c !important;
-	font-weight : bold;
+.nep-homepage-sidebar div {
+	border-radius: 0 25px 0 0;
+	padding-top: 10px;
 }
 
-/* Sidebar Navigation */
+.fixed-position {
+	padding: 25px 15px 25px;
+}
+
+.textwidget img {
+	max-width: 225px;
+
+	margin: 5px;
+
+}
 
 .sidebar-nav {
 	-webkit-padding-start: 10px;
@@ -156,7 +184,7 @@ body {
 }
 
 aside .fixed-position div div ul {
--webkit-padding-start: 10px;
+	-webkit-padding-start: 10px;
 }
 
 aside .fixed-position div div ul li,
@@ -172,245 +200,61 @@ aside .fixed-position div div ul li:last-child,
 	border : none;
 }
 
-.event-sidebar-nav-title a,
 .sidebar-nav-title li a {
-	padding : 0;
-	font-size : 14pt;
-	font-weight : bold !important;
-}
-.event-sidebar-nav-title {
-margin-bottom: .3em;
+	font-size: 12pt;
+	font-weight: bold !important;
 }
 
-.event-sidebar-nav-title ~ ul {
-	    -webkit-padding-start: 0;
+.widget ul li {
+padding-top: .75em;
+
 }
-
-
-/* Forms Siderbar Navigation */
-
-
-.forms-widget #menu-forms-menu li {
-	padding : .3em;
-	font-size : .8em;
-}
-
-/*
-  *
-  * Header
-*/
-
-header {
-	height : 4.65em;
-}
-
-.site-logo,
-.site-logo img {
-	border-radius : 0;
-	width: 100%
-}
-
-/*
-  *
-  * Containers
-*/
-
-.page-container {
-	border-radius : 2.3em;
-	background : #FFFFFF;
-	box-shadow : 2px 2px 2px #58585a;
-}
-
-.full-page-container {
-	padding : 150px 1.3em 1.3em;
-}
-
-/* Content Container */
-
 main {
-	max-width : 600px;
-	margin : 1.3em auto;
-	flex : grow;
-}
-
-.page-feature-img {
-	width : 100%;
-	margin : 2.3em auto 1.3em;
-	text-align : center;
+	flex:3  475px;
+	padding: 50px 25px 50px;
+	width: 95%;
 }
 
 .page-feature-img img {
-	width : 100%;
-	max-width : 62.3em;
-	height : 100%;
+max-width: 600px;
+width: 100%;
+
 }
-
-/* Attachment.php */
-
-.center-content {
-	text-align : center;
-}
-
-.attachment-title {
-	margin-bottom : 10px;
-}
-
-.attachment-content {
-	width : 75%;
-	margin : auto;
-	padding-bottom : 2.3em;
-}
-
-/* Comments */
-
-.comment-container {
-	padding : 10px;
-	background : rgba(210,231,181,0.25);
-}
-
-/* This is the textarea comment box */
-
-#comment {
-	width : 95%;
-	clear : both;
-}
-
-/* This is each comment displayed */
-
-.comment {
-	padding : 10px 0 10px;
-	border-bottom : 1px solid #58585a;
-}
-
-#respond {
-	padding-top : 10px;
-}
-
-.comment-author img {
-	display : none;
-}
-
-.homepage-intro ~ p {
-	/*
-    * adding style to the intro excerpt on the homepage
-    	* Can not find css for
-    	*
-    the excerpt itself
-    	* Using the '~' to denote sibling
-    	* applies css to the
-    	*
-    <p> following the tag with the .homepage-intro class
-  */
-	padding : 0 1.3em 0;
-	color : #78a22f;
-	font-style : italic;
-}
-
-.body ul li {
-	margin : 10px 0 10px;
-}
-
-/* Sidebar Container */
-
-aside {
-	display : block;
-	width : 29%;
-	min-height : 300px;
-	margin-top : 150px;
-	padding : 2.3em 10px .3em;
-	border-radius : 0 2.3em 0 0;
-	flex : shrink;
-}
-
-.display-inline-block {
-	display : flex;
-	width : 100%;
-}
-
-/*  Removed until overlapping bug is fixed */
-/*.fixed-position {
-  position : fixed;
- width    : 20%;
-} */
-
-/* Widgets */
-
-.community-widget {
-	margin-top : 1.3em;
-}
-
-.textwidget p img {
-	width : 100%;
-}
-
-.widget ul li,
-.community-widget ul li,
-#menu-forms-menu li {
-
-padding-top: .75em;
-}
-
-/*
-  *
-  * Footer
-*/
 
 footer {
-	border-radius : 0 0 2.3em 2.3em;
+	border-radius: 0 0  24px 24px;
+width: 100%;
+}
+footer div {
+	flex: 1;
 }
 
-.footer-alert {
-	padding : 10px 0 10px;
-	color : #FFFFFF;
-	background : #78a22f;
-	text-align : center;
-	font-size : .8em;
-}
+#footer-content  {
+	display: flex;
 
-.footer-content {
-	display : flex;
-}
-
-.menu-footer-menu-container,
-.menu-social-menu-container {
-	margin : auto;
-}
-
-.menu-social-menu-container {
-margin-top: 1.3em;
-}
-
-#footer-menu {
-	-webkit-padding-start: 0;
-	margin-bottom : 0;
-}
-
-#footer-menu li {
-	padding : 10px 0px 10px;
-}
-
-#footer-menu li a {
-	padding : .3em 1.3em .3em;
-}
-
-#social-menu {
--webkit-padding-start: 0;
-}
-
-#social-menu li a {
-border: none;
 }
 
 #google_language_translator {
-	padding-bottom : 10px;
-	text-align : center;
+	flex: 1;
+	text-align: center;
+	margin: 0 0 15px;
 }
 
-.copyright p {
-	margin-bottom : 2.3em;
-	padding : 10px 0 10px;
-	color : #174a7c;
-	text-align : center;
-	font-size : .8em;
-	font-weight : bold;
+
+#footer-menu-container {
+	display: flex;
+	align-items: center;
+	flex: 2;
+}
+
+
+#social-menu-container {
+	flex: 1;
+}
+
+#copyright {
+	color: #ffffff;
+	flex: 1;
+	padding: 15px;
+	text-align: center;
 }
