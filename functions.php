@@ -8,14 +8,14 @@ if ( ! isset( $content_width ) ) $content_width = 960;
 */
 function derf_theme_styles() {
 	wp_enqueue_style( 'main_css', get_template_directory_uri() . '/style.css' );
-	wp_enqueue_style( 'gallery_css', get_template_directory_uri() . '/css/gallery.css' );
-	wp_enqueue_style( 'normal_css', get_template_directory_uri() . '/css/normalize.css' );
-	wp_enqueue_style( 'fonts_css', get_template_directory_uri() . '/css/fonts.css' );
-	wp_enqueue_style( 'custom_plugin_style_css', get_template_directory_uri() . '/css/custom-plugin-style.css' );
-	wp_enqueue_style( 'media_queries_css', get_template_directory_uri() . '/css/media-queries.css' );
-	wp_enqueue_style( 'dimensions_foundation_css', get_template_directory_uri() . '/css/dimensions-foundation.css' );
-	wp_enqueue_style( 'dimensions_education_programs_css', get_template_directory_uri() . '/css/dimensions-education-programs.css' );
-	wp_enqueue_style( 'nature_explore_css', get_template_directory_uri() . '/css/nature-explore.css' );
+	wp_enqueue_style( 'gallery_css', get_template_directory_uri() . '/css/gallery.min.css' );
+	wp_enqueue_style( 'normal_css', get_template_directory_uri() . '/css/normalize.min.css' );
+	wp_enqueue_style( 'fonts_css', get_template_directory_uri() . '/css/fonts.min.css' );
+	wp_enqueue_style( 'custom_plugin_style_css', get_template_directory_uri() . '/css/custom-plugin-style.min.css' );
+	wp_enqueue_style( 'media_queries_css', get_template_directory_uri() . '/css/media-queries.min.css' );
+	wp_enqueue_style( 'dimensions_foundation_css', get_template_directory_uri() . '/css/dimensions-foundation.min.css' );
+	wp_enqueue_style( 'dimensions_education_programs_css', get_template_directory_uri() . '/css/dimensions-education-programs.min.css' );
+	wp_enqueue_style( 'nature_explore_css', get_template_directory_uri() . '/css/nature-explore.min.css' );
 }
 
 add_action( 'wp_enqueue_scripts', 'derf_theme_styles');
@@ -23,7 +23,7 @@ add_action( 'wp_enqueue_scripts', 'derf_theme_styles');
 /**
  * Add Editor Style
  */
-add_editor_style( get_template_directory_uri() . '/css/fonts.css' );
+add_editor_style( get_template_directory_uri() . '/css/fonts.min.css' );
 
 /*
  * Register Widgets
