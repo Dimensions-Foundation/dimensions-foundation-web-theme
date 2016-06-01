@@ -1,26 +1,26 @@
 
 /**
- * Navigation
- */
-
-
+* Navigation
+*/
 .dep-primary-menu {
-width: 85% !important;
+	width: 85% !important;
 }
 
 .dep-primary-menu li {
-padding:  15px !important
+	padding:  5px !important
 }
-
-
 
 #menu-forms-menu li,
 #menu-forms-menu li a {
 	font-size: 10pt;
-font-weight: normal;
-padding: 2px;
+	font-weight: normal;
+	padding: 2px;
 }
 
 #menu-forms-menu {
 	-webkit-margin-before: 0;
+}
+
+#footer-menu-container{
+flex: 6;
 }

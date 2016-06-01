@@ -1,7 +1,6 @@
-.design-nav {
-  flex: 1.5 !important;
+.nep-primary-menu li {
+flex: 1;
 }
-
 .nep-homepage-intro ~ p {
 color: white;
 font-size: 16pt;

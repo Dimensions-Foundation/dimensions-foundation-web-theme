@@ -91,11 +91,11 @@ header, .page-container {
 }
 
 .site-logo a img {
-	width: 225px;
-	position: absolute;
-
+border-radius: 0;
 	margin-left: 25px;
 	margin-top: -15px;
+	position: absolute;
+	width: 225px;
 }
 
 /* -----------------------------------------------------------------------------
@@ -108,9 +108,14 @@ header, .page-container {
 	justify-content: space-around;
 }
 
-.horizontal-menu li {
-	margin: 5px 10px 5px;
+.horizontal-menu li a {
+	border-right: 1px solid #ffffff;
+	padding: 10px 15px 10px;
 	text-align: center;
+}
+
+.horizontal-menu li:last-child  a {
+	border: 0;
 }
 
 /* ----------- Top Menu ----------- */
@@ -126,9 +131,6 @@ header, .page-container {
 	margin: auto;
 	justify-content: center;
 	width: 100%;
-}
-#top-menu li {
-	padding: 10px 5px 10px;
 }
 
 #top-menu li a {
@@ -151,15 +153,15 @@ header, .page-container {
 }
 
 #primary-menu li {
+	align-self:stretch;
 	border-radius: 12px 12px 0 0 ;
 	display: flex;
-	padding: 10px 5px 10px;
 	margin: 5px 5px 0;
-	align-self:stretch;
-
 }
+
 #primary-menu li a {
 	align-self: center;
+	border:0;
 	font-size: 10pt ;
 }
 
@@ -257,7 +259,7 @@ main {
 }
 
 .attachment-content {
-text-align: center;
+	text-align: center;
 }
 
 /* -----------------------------------------------------------------------------
@@ -296,13 +298,19 @@ footer div {
 #footer-menu-container {
 	display: flex;
 	align-items: center;
-	flex: 6;
+	flex: 2;
 }
 
-#footer-menu li { font-size: 10pt}
+#footer-menu li {
+	font-size: 10pt
+}
 
 #social-menu-container {
 	flex:1;
+}
+
+#social-menu li a {
+	border: 0;
 }
 
 #copyright {
