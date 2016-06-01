@@ -20,7 +20,8 @@
 #menu-forms-menu {
 	-webkit-margin-before: 0;
 }
-
-#footer-menu-container{
-flex: 6;
+@media (min-width:800px){
+	#footer-menu-container{
+		flex: 6;
+	}
 }
