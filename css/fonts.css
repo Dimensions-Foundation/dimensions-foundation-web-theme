@@ -5,6 +5,7 @@ h2,
 h3,
 h4,
 h5,
+h6,
 li,
 ol,
 p,
@@ -13,6 +14,7 @@ span,
 ul {
 	color : #58585a;;
 	font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+ font-size: 1em;
 }
 
 h1,
@@ -28,7 +30,6 @@ h6  {
 
 p {
 
-	font-size : 1em;
 	line-height : 1.4;
 	margin: 0;
 	padding : 0 10px 10px;
@@ -46,12 +47,20 @@ h3 {
 	font-size : 1.4em;
 }
 
-h4, h5 {
+h4, {
 	font-size: 1.2em;
 }
 
 h5 {
+font-size: 1.1em;
+}
+
+h5, h6 {
 	color: #7a9943;
+}
+
+h6 {
+font-size: .85em;
 }
 
 a {
