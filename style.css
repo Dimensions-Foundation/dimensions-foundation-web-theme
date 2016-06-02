@@ -277,6 +277,8 @@ main {
 
 footer {
 	border-radius: 0 0  24px 24px;
+/* To allow for sidebar to display under main content */
+order: 3;
 	width: 100%;
 }
 footer div {
