@@ -313,10 +313,6 @@ footer div {
 	font-size: 10pt
 }
 
-#social-menu-container {
-	flex:1;
-}
-
 #social-menu li a {
 	border: 0;
 }

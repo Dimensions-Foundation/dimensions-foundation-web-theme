@@ -16,11 +16,16 @@
     border-top: 1px solid #ffffff;
     padding: 10px 0 10px;
   }
+  #social-menu li,
   .horizontal-menu li  a,
   .horizontal-menu li:first-child {
     border: 0;
   }
 
+  #social-menu-container {
+    flex: 1;
+  }
+  
   .page-container, footer {
     border-radius: 0;
   }

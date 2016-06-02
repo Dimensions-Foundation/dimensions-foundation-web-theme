@@ -14,11 +14,12 @@
 #menu-forms-menu li a {
 	font-size: 10pt;
 	font-weight: normal;
-	padding: 2px;
+	padding: 5px;
 }
 
 #menu-forms-menu {
 	-webkit-margin-before: 0;
+	-webkit-padding-start: 25px;
 }
 @media (min-width:800px){
 	#footer-menu-container{
