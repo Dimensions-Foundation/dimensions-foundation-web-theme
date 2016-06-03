@@ -1,10 +1,10 @@
 .nep-primary-menu li {
-flex: 1;
+  flex: 1;
 }
 .nep-homepage-intro ~ p {
-color: white;
-font-size: 16pt;
-font-style: italic;
+  color: white;
+  font-size: 16pt;
+  font-style: italic;
 }
 
 .nep-homepage-sidebar {
@@ -24,5 +24,11 @@ font-style: italic;
 }
 .nep-homepage-sidebar .su-row  .su-button,
 .nep-homepage-sidebar .su-row .su-column .su-column-inner .su-button {
-margin-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 800px) {
+  .nep-homepage-sidebar div {
+    border-radius: 0;
+  }
 }

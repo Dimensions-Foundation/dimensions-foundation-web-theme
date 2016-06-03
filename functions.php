@@ -3,37 +3,46 @@ if ( ! isset( $content_width ) ) $content_width = 960;
 
 
 
-/**
-* Add in the Style Sheets
+/* -----------------------------------------------------------------------------
+*  Enqueue Stylesheets
+* ------------------------------------------------------------------------------
 */
 function derf_theme_styles() {
-	wp_enqueue_style( 'main_css', get_template_directory_uri() . '/style.css' );
-	wp_enqueue_style( 'gallery_css', get_template_directory_uri() . '/css/gallery.min.css' );
+	// Add in required style.css
+	wp_enqueue_style( 'header_css', get_template_directory_uri() . '/style.css' );
+	// First normalize all styles
 	wp_enqueue_style( 'normal_css', get_template_directory_uri() . '/css/normalize.min.css' );
+	// Add main style sheet
+	wp_enqueue_style( 'main_css', get_template_directory_uri() . '/css/main.min.css' );
+	// Add fonts style - seperate to add to Editor style
 	wp_enqueue_style( 'fonts_css', get_template_directory_uri() . '/css/fonts.min.css' );
+	// Add custom style changes to plugins
 	wp_enqueue_style( 'custom_plugin_style_css', get_template_directory_uri() . '/css/custom-plugin-style.min.css' );
-	wp_enqueue_style( 'media_queries_css', get_template_directory_uri() . '/css/media-queries.min.css' );
+	// Add custom styles for dimensionsfoundation.org
 	wp_enqueue_style( 'dimensions_foundation_css', get_template_directory_uri() . '/css/dimensions-foundation.min.css' );
+	// Add custom styles for dimensionsed.org
 	wp_enqueue_style( 'dimensions_education_programs_css', get_template_directory_uri() . '/css/dimensions-education-programs.min.css' );
+	// Add custom styles for natureexplore.org
 	wp_enqueue_style( 'nature_explore_css', get_template_directory_uri() . '/css/nature-explore.min.css' );
 }
 
 add_action( 'wp_enqueue_scripts', 'derf_theme_styles');
 
-/**
- * Add Editor Style
- */
+/* -----------------------------------------------------------------------------
+*  Add font styles to visual editor
+* ------------------------------------------------------------------------------
+*/
 add_editor_style( get_template_directory_uri() . '/css/fonts.min.css' );
 
-/*
- * Register Widgets
- *
- * Description: This function adds widgets to the theme
- *              There are 4 sections within this function.
- *              1 for each of the three divisions of DERF,
- *              and 1 section for generic widgets
- *
- */
+/* -----------------------------------------------------------------------------
+* Register Widgets
+*
+* Description: This function adds widgets to the theme
+*              There are 4 sections within this function.
+*              1 for each of the three divisions of DERF,
+*              and 1 section for generic widgets
+* ------------------------------------------------------------------------------
+*/
 function derf_add_widget_sidebar() {
 	/* Generic Widgets */
 	register_sidebar( array(
@@ -76,21 +85,19 @@ function derf_add_widget_sidebar() {
 		'before_title'  => '<h4 class="custom-2-sidebar-header">',
 		'after_title'   => '</h4>',
 	) );
-	/**
- 	 * Dimensions Foundation Widgets
-	 */
-
-
-
-	/**
- 	 * Dimensions Education Programs Widgets
-	 */
-
-
-	/**
- 	 * Nature Explore Widgets
-	 */
-	 	register_sidebar( array(
+	/*----------------------------------------------------------------------------
+	* Dimensions Foundation Widgets
+	*-----------------------------------------------------------------------------
+	*/
+	/*----------------------------------------------------------------------------
+	* Dimensions Education Programs Widgets
+	*-----------------------------------------------------------------------------
+	*/
+	/* -----------------------------------------------------------------------------
+	*  Nature Explore Widgets
+	* ------------------------------------------------------------------------------
+	*/
+	register_sidebar( array(
 		'name'          => 'Above Home Sidebar',
 		'id'            => 'above_home_sidebar',
 		'before_widget' => '<div class="widget">',
@@ -100,20 +107,21 @@ function derf_add_widget_sidebar() {
 	) );
 
 	register_sidebar( array(
-			'name'          => 'Newsletter Sidebar',
-			'id'            => 'newsletter_sidebar',
-			'before_widget' => '<div class="newsletter-sidebar-widget">',
-			'after_widget'  => '</div>',
-			'before_title'  => '<h3 class="newsletter-sidebar-header">',
-			'after_title'   => '</h3>',
-		) );
+		'name'          => 'Newsletter Sidebar',
+		'id'            => 'newsletter_sidebar',
+		'before_widget' => '<div class="newsletter-sidebar-widget">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h3 class="newsletter-sidebar-header">',
+		'after_title'   => '</h3>',
+	) );
 
 }
 add_action( 'widgets_init', 'derf_add_widget_sidebar' );
 
 
-/**
-* Add in Menus
+/* -----------------------------------------------------------------------------
+*  Add Menus
+* ------------------------------------------------------------------------------
 */
 
 add_theme_support( 'menus' ) ;
@@ -131,39 +139,31 @@ function derf_register_theme_menus() {
 add_action( 'init', 'derf_register_theme_menus' );
 
 
-/**
-* Customize Settings
+/* -----------------------------------------------------------------------------
+*  Custom Settings
+* ------------------------------------------------------------------------------
 */
 
-/**
-* Custom Background
-*/
+/* Custom Background */
 add_theme_support( 'custom-background' );
 
 
-/**
-* Custom Post Thumbnails
-*/
+/* Custom Post Thumbnails */
 add_theme_support( 'post-thumbnails'  );
 add_image_size( 'blog-thumbnail', 200, 200 );
 
 
 
-/**
-* Add Page Exceprts
-*/
+/* Add Page Exceprts */
 add_action( 'init', 'my_add_excerpts_to_pages' );
 function my_add_excerpts_to_pages() {
 	add_post_type_support( 'page', 'excerpt' );
 }
 
-/**
-* Add style to visual editor
-*/
-add_editor_style('style.css');
 
-/**
-* Site LOGO
+/* -----------------------------------------------------------------------------
+*  Add site logo
+* ------------------------------------------------------------------------------
 */
 function themeslug_theme_customizer( $wp_customize ) {
 	$wp_customize->add_section( 'themeslug_logo_section' , array(
@@ -204,42 +204,39 @@ function themeslug_theme_customizer( $wp_customize ) {
 		}
 
 
-/**
- * Ninja Forms Plugin Alterations
- */
+		/*--------------------------------------------------------------------------
+		*  Ninja Form  Customizations
+		* --------------------------------------------------------------------------
+		*/
 
-/**
-* To give Editors access to the ALL Forms menu
-*/
-function my_custom_change_ninja_forms_all_forms_capabilities_filter( $capabilities ) {
-    $capabilities = "edit_pages";
-    return $capabilities;
-}
-add_filter( 'ninja_forms_admin_parent_menu_capabilities', 'my_custom_change_ninja_forms_all_forms_capabilities_filter' );
-add_filter( 'ninja_forms_admin_all_forms_capabilities', 'my_custom_change_ninja_forms_all_forms_capabilities_filter' );
+		/* To give Editors access to the ALL Forms menu		*/
+		function my_custom_change_ninja_forms_all_forms_capabilities_filter( $capabilities ) {
+			$capabilities = "edit_pages";
+			return $capabilities;
+		}
+		add_filter( 'ninja_forms_admin_parent_menu_capabilities', 'my_custom_change_ninja_forms_all_forms_capabilities_filter' );
+		add_filter( 'ninja_forms_admin_all_forms_capabilities', 'my_custom_change_ninja_forms_all_forms_capabilities_filter' );
 
-/**
-* To give Editors access to ADD New Forms
-*/
-function my_custom_change_ninja_forms_add_new_capabilities_filter( $capabilities ) {
-    $capabilities = "edit_pages";
-    return $capabilities;
-}
-add_filter( 'ninja_forms_admin_parent_menu_capabilities', 'my_custom_change_ninja_forms_add_new_capabilities_filter' );
-add_filter( 'ninja_forms_admin_add_new_capabilities', 'my_custom_change_ninja_forms_add_new_capabilities_filter' );
+		/* To give Editors access to ADD New Forms		*/
+		function my_custom_change_ninja_forms_add_new_capabilities_filter( $capabilities ) {
+			$capabilities = "edit_pages";
+			return $capabilities;
+		}
+		add_filter( 'ninja_forms_admin_parent_menu_capabilities', 'my_custom_change_ninja_forms_add_new_capabilities_filter' );
+		add_filter( 'ninja_forms_admin_add_new_capabilities', 'my_custom_change_ninja_forms_add_new_capabilities_filter' );
 
-/**
- * To give Editors access to the Submissions
- * Simply replace ‘edit_posts’ in the code snippet below with the capability
- * that you would like to attach the ability to view/edit submissions to.
- * Please note that all three filters are needed to provide proper submission viewing/editing on the backend!
-	*/
-function nf_subs_capabilities( $cap ) {
-    return 'edit_posts';
-}
-add_filter( 'ninja_forms_admin_submissions_capabilities', 'nf_subs_capabilities' );
-add_filter( 'ninja_forms_admin_parent_menu_capabilities', 'nf_subs_capabilities' );
-add_filter( 'ninja_forms_admin_menu_capabilities', 'nf_subs_capabilities' );
+		/**
+		* To give Editors access to the Submissions
+		* Simply replace ‘edit_posts’ in the code snippet below with the capability
+		* that you would like to attach the ability to view/edit submissions to.
+		* Please note that all three filters are needed to provide proper submission viewing/editing on the backend!
+		*/
+		function nf_subs_capabilities( $cap ) {
+			return 'edit_posts';
+		}
+		add_filter( 'ninja_forms_admin_submissions_capabilities', 'nf_subs_capabilities' );
+		add_filter( 'ninja_forms_admin_parent_menu_capabilities', 'nf_subs_capabilities' );
+		add_filter( 'ninja_forms_admin_menu_capabilities', 'nf_subs_capabilities' );
 
 
-/* END FUNCTIONS.PHP */ ?>
+		/* END FUNCTIONS.PHP */ ?>

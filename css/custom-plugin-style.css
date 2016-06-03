@@ -55,13 +55,13 @@ div.ninja-forms-form-wrap {
 }
 
 .su-button {
-font-weight: normal;
+  font-weight: normal;
 }
 
 .su-button span {
-align-self: center;
-border: 0 !important;
-line-height: 2em !important;
+  align-self: center;
+  border: 0 !important;
+  line-height: 2em !important;
 }
 
 
