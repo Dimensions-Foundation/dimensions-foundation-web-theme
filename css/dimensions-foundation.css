@@ -20,7 +20,6 @@
   background-repeat: no-repeat;
   clear: both;
   display: block;
-  padding-top: 10px
 }
 
 .derf-homepage-highlighted-header {
@@ -31,10 +30,14 @@
   height: 75%;
 }
 
+.derf-homepage-background #gallery-2 {
+margin: 0;
+}
+
 .derf-homepage-background #gallery-2 .gallery-item {
-  margin: 5px;
+  margin: 0 5px 0;
   max-width: 175px;
-  width: 20%;
+width:inherit;
 }
 
 .derf-homepage-background #gallery-2 .gallery-item .gallery-icon a img {
