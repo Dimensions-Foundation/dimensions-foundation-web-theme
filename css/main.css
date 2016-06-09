@@ -297,6 +297,9 @@ footer div {
 	align-items: center;
 	flex: 2;
 }
+ #social-menu-container {
+flex: 1;
+}
 
 #footer-menu li {
 	font-size: 10pt
@@ -462,6 +465,7 @@ display: flex;
   }
 
   #social-menu-container {
+display: flex;
     flex: 1;
   }
 
