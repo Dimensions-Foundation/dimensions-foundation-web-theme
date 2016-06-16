@@ -1,4 +1,3 @@
-
 /*
 * Plugin Custom CSS
 * -----------------
@@ -7,28 +6,75 @@ in this network
 *
 */
 
+/* ------------------------------------------------------------------
+* WP Members
+*--------------------------------------------------------------------*/
+.account-settings ul {
+  display: flex;
+  list-style-type: none;
+  flex: 1;
+}
+
+.account-settings ul li {
+  display: flex;
+  flex: 1;
+  margin: 10px;
+}
+.submit .button,
+
+#wpua-add-existing,
+#wpua-undo-existing,
+#wpua-remove-existing,
+.wpmem_return_link a,
+.button_div input,
+.account-settings ul li a {
+  background: #7a9943;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  padding: 10px 20px;
+  text-align: center;
+}
+.wpmem_return_link a,
+.submit .button,
+#wpua-add-existing,
+#wpua-undo-existing,
+#wpua-remove-existing,
+.button_div input {
+  padding: 5px 10px;
+}
+
 /*
 *
 * Ninja Forms Custom CSS
 */
-
 .ninja-forms-cont table {
-  margin-bottom : 5px;
-  padding : 10px 5px 10px;
-  border-radius : 12px;
-  background : rgba( 80, 80, 80, 0.25);
+  margin-bottom: 5px;
+  padding: 10px 5px 10px;
+  border-radius: 12px;
+  background: rgba(80, 80, 80, 0.25);
 }
 
 .ninja-forms-cont table tbody tr td {
-  background : #FFFFFF;
+  background: #ffffff;
 }
 
 div.ninja-forms-form-wrap {
-  background : none !important;
+  background: none !important;
 }
 
 #ninja_forms_form_15_save_progress {
-  font-size : 10pt !important;
+  font-size: 10pt !important;
+}
+
+.ninja-forms-ul-flex-wrap span ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.ninja-forms-field p img {
+  height: 90%;
+  width: 90%;
 }
 
 /*
@@ -37,12 +83,11 @@ div.ninja-forms-form-wrap {
 */
 
 /*  Add FlexBox */
-
 .su-row,
 .su-column,
 .su-column-inner,
 .su-column-inner a {
-  display:flex !important;
+  display: flex !important;
   flex-wrap: wrap;
 }
 
@@ -64,20 +109,19 @@ div.ninja-forms-form-wrap {
   line-height: 2em !important;
 }
 
-
 .su-post-blog {
-  padding : 25px 0 25px;
-  border-bottom : 2px solid #d2e7b5;
+  padding: 25px 0 25px;
+  border-bottom: 2px solid #d2e7b5;
 }
 
 .su-posts-blog-loop .su-post-blog-thumbnail img {
-  max-width : 150px;
-  max-height : 150px;
+  max-width: 150px;
+  max-height: 150px;
 }
 
 .su-highlight.highlighted-header {
   border-radius: 10px;
-  display:block;
+  display: block;
   padding: 5px;
   width: 100%;
 }
@@ -85,13 +129,15 @@ div.ninja-forms-form-wrap {
 .su-posts-list-loop li {
   padding-top: .5em;
 }
+
 .su-slider {
-  max-width:450px !important;
+  max-width: 450px !important;
 }
 
 .su-slider-slide-title {
   display: none !important;
 }
+
 .su-posts li a {
   font-weight: normal;
 }

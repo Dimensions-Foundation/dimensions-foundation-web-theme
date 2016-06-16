@@ -86,19 +86,3 @@ ul {
 .dep-copyright-color {
 	color : #174a7c !important;
 }
-
-
-
-/* * Image CSS */
-
-img {
-	border-radius : 15px;
-}
-
-.no-rounded-img {
-	border-radius : 0 !important;
-}
-
-.attachment {
-	margin-bottom : 0 !important;
-}

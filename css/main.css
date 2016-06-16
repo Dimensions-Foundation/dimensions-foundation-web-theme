@@ -56,6 +56,10 @@ body {
   width: 100%;
 }
 
+hr {
+width: 100%;
+}
+
 header,
 .page-container {
   display: flex;
@@ -153,7 +157,7 @@ header,
 #full-page-container {
   display: flex;
   flex-direction: column;
-  padding: 125px 0 0;
+  padding: 150px 25px  25px;
   max-width: 960px;
   width: 100%;
 }
@@ -419,6 +423,20 @@ img.alignright {
   display: none;
 }
 
+
+
+img {
+	border-radius : 15px;
+}
+
+.no-rounded-img {
+	border-radius : 0 !important;
+}
+
+.attachment {
+	margin-bottom : 0 !important;
+}
+
 /* -----------------------------------------------------------------------------
 *  Media Queries
 * ------------------------------------------------------------------------------
@@ -467,7 +485,8 @@ img.alignright {
     border-radius: 0;
   }
 
-  main {
+  main,
+#full-page-container {
     flex: 1 800px;
     padding: 50px 10px 15px;
     width: 90%;
