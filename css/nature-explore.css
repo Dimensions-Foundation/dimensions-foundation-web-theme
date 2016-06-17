@@ -1,6 +1,7 @@
-.nep-primary-menu li {
-  flex: 1;
+.nep-primary-menu .design-nav {
+  flex: 1.25 !important;
 }
+
 .nep-homepage-intro ~ p {
   color: white;
   font-size: 16pt;
@@ -9,12 +10,14 @@
 
 .nep-homepage-sidebar {
   flex-direction: column;
+  margin-top: 100px;
 }
 
 .nep-homepage-sidebar .su-row {
-  text-align: center;
-  padding: 0;
+  flex-wrap: nowrap;
   margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
 .nep-homepage-sidebar .su-row .su-column .su-column-inner img {
@@ -22,9 +25,32 @@
   height: 100px;
   width: 80px;
 }
+
 .nep-homepage-sidebar .su-row  .su-button,
 .nep-homepage-sidebar .su-row .su-column .su-column-inner .su-button {
   margin-bottom: 10px;
+}
+
+.nep-widget-info {
+  padding: 8px;
+}
+
+.nep-full-width-button .su-column .su-column-inner,
+.nep-full-width-button .su-column .su-column-inner a {
+  width: 100%;
+}
+
+.su-column .su-column-inner,
+.nep-full-width-button .su-column .su-column-inner a span {
+  margin: auto;
+}
+
+.nep-social-container {
+  flex: 4 !Important;
+}
+
+.nep-footer-menu {
+  -webkit-padding-start: 15px;
 }
 
 @media (max-width: 800px) {

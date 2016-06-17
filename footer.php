@@ -5,11 +5,13 @@ $footer_copyright_color = "";
 $footer_copyright_text =  get_bloginfo('name');
 $footer_copyright_text .= ' 	&copy;' . date('Y') . ' All rights reserved. <br />';
 $footer_menu_css = 'horizontal-menu line-break';
+$social_menu_container_css = ' ';
 
 if ( strstr( $site_url, 'natureexplore.org' ) ) {
 	$footer_background = "background-brown";
 	$footer_copyright_text .= ' ' . get_bloginfo('name') . ' is a division of Dimensions Educational Research Foundation, a 501(c)3 non-profit organization.';
 	$footer_menu_css .= ' nep-footer-menu';
+	$social_menu_container_css = 'nep-social-container';
 } else if ( strstr( $site_url, 'dimensionsed.org' ) ) {
 	$footer_background = "background-blue";
 	$footer_copyright_text .= ' ' . get_bloginfo('name') . ' is a division of Dimensions Educational Research Foundation, a 501(c)3 non-profit organization.';
@@ -38,6 +40,7 @@ if ( strstr( $site_url, 'natureexplore.org' ) ) {
 			'theme_location' 	=> 'social-menu-location',
 			'container'		=> 'nav',
 			'container_id' => 'social-menu-container',
+			'container_class' => $social_menu_container_css,
 			'menu_id' 		    => 'social-menu',
 			'menu_class'		=> $footer_menu_css
 		);
