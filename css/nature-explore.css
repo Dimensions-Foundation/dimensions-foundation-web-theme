@@ -1,3 +1,11 @@
+.nep-top-menu {
+  margin-bottom: 75px !important;
+}
+
+.nep-logo a img {
+  margin-top: -40px !important;
+}
+
 .nep-primary-menu .design-nav {
   flex: 1.25 !important;
 }
@@ -10,12 +18,24 @@
 
 .nep-homepage-sidebar {
   flex-direction: column;
-  margin-top: 100px;
+  margin-top: 75px;
+  padding-top: 25px;
+}
+
+.nep-homepage-sidebar .background-green-light {
+  border-radius: 0 25px 0 0;
+  height: 100%;
+  padding-top: 15px;
+}
+
+.nep-homepage-sidebar div .widget ul,
+.nep-homepage-sidebar div .widget .textwidget ul {
+  -webkit-margin-before: 0;
 }
 
 .nep-homepage-sidebar .su-row {
   flex-wrap: nowrap;
-  margin: 0;
+  margin: 5px 0 0;
   padding: 0;
   text-align: center;
 }
