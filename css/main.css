@@ -148,7 +148,7 @@ header,
 
 #primary-menu li {
   background: none !important;
-display:flex;
+display: flex;
   margin: 5px 2px 0;
 }
 
@@ -188,10 +188,6 @@ aside {
   max-width: 275px;
 }
 
-.nep-homepage-sidebar div {
-  border-radius: 0 25px 0 0;
-  padding-top: 10px;
-}
 
 .fixed-position {
   padding: 25px 15px 25px;
