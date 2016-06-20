@@ -3,17 +3,18 @@
 }
 
 .derf-homepage-intro {
+  align-self: flex-end;
   color: #174a7c;
   clear: both;
-  display: block;
   float: right;
   font-size: 16pt;
-  font-style:italic;
+  font-style: italic;
   margin-top: -75px;
   padding: 0 10px 20px;
   text-align: center;
   width: 60%;
 }
+
 .derf-homepage-background {
   background: url('http://sandbox.dimensionsfoundation.org/wp-content/uploads/2016/04/derf-background.jpg');
   background-size: cover;
@@ -31,13 +32,13 @@
 }
 
 .derf-homepage-background #gallery-2 {
-margin: 0;
+  margin: 0;
 }
 
 .derf-homepage-background #gallery-2 .gallery-item {
   margin: 0 5px 0;
   max-width: 175px;
-width:inherit;
+  width: inherit;
 }
 
 .derf-homepage-background #gallery-2 .gallery-item .gallery-icon a img {
@@ -47,11 +48,12 @@ width:inherit;
   height: 100%;
   width: 100%;
 }
+
 @media (max-width: 800px) {
-.derf-homepage-intro {
-float:none;
-width: 95%;
-}
+  .derf-homepage-intro {
+    float: none;
+    width: 95%;
+  }
 }
 
 @media (max-width: 600px) {

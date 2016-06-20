@@ -148,7 +148,7 @@ header,
 
 #primary-menu li {
   background: none !important;
-  flex: 1;
+display:flex;
   margin: 5px 2px 0;
 }
 
