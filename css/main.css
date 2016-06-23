@@ -3,7 +3,7 @@
 * ------------------------------------------------------------------------------
 */
 .background-blue-light,
-#primary-menu .background-blue-light a  {
+#primary-menu .background-blue-light a {
   background-color: #0086be !important;
 }
 
@@ -13,47 +13,47 @@
 }
 
 .background-brown,
-#primary-menu .background-brown a  {
+#primary-menu .background-brown a {
   background-color: #755725 !important;
 }
 
-.background-purple ,
+.background-purple,
 #primary-menu .background-purple a {
   background-color: #57075e !important;
 }
 
-.background-orange ,
+.background-orange,
 #primary-menu .background-orange a {
   background-color: #d35d2b !important;
 }
 
 .background-red,
-#primary-menu .background-red a  {
+#primary-menu .background-red a {
   background-color: #691c00 !important;
 }
 
 .background-green-light,
-#primary-menu .background-green-light a  {
+#primary-menu .background-green-light a {
   background-color: #d2e7b5 !important;
 }
 
 .background-green-medium-light,
-#primary-menu .background-green-medium-light a  {
+#primary-menu .background-green-medium-light a {
   background-color: #9fc24d !important;
 }
 
-.background-green-medium ,
+.background-green-medium,
 #primary-menu .background-green-medium a {
   background-color: #7a9943 !important;
 }
 
 .background-green-dark,
-#primary-menu .background-green-dark a  {
+#primary-menu .background-green-dark a {
   background-color: #1e6f41 !important;
 }
 
 .background-white,
-#primary-menu .background-white a  {
+#primary-menu .background-white a {
   background-color: #ffffff !important;
 }
 
@@ -148,7 +148,7 @@ header,
 
 #primary-menu li {
   background: none !important;
-display: flex;
+  flex: 1;
   margin: 5px 2px 0;
 }
 
@@ -159,7 +159,7 @@ display: flex;
   border-radius: 12px 12px 0 0;
   display: flex;
   font-size: .8em;
-margin:auto;
+  margin: auto;
   padding: 10px 10px 10px;
 }
 
@@ -170,7 +170,7 @@ margin:auto;
 #full-page-container {
   display: flex;
   flex-direction: column;
-  padding: 150px 25px  25px;
+  padding: 150px 25px 25px;
   max-width: 960px;
   width: 100%;
 }
@@ -187,7 +187,6 @@ aside {
   margin-top: 160px;
   max-width: 275px;
 }
-
 
 .fixed-position {
   padding: 25px 15px 25px;
@@ -256,12 +255,6 @@ main {
 .page-feature-img {
   margin-bottom: 15px;
   text-align: center;
-}
-
-.page-feature-img img {
-  height: 100%;
-  max-width: 600px;
-  width: 100%;
 }
 
 .attachment-content {
@@ -432,18 +425,19 @@ img.alignright {
   display: none;
 }
 
-
-
 img {
-  border-radius : 15px;
+  border-radius: 15px;
+height: inherit;;
+  max-height: 100%;
+  max-width: 100%;
 }
 
 .no-rounded-img {
-  border-radius : 0 !important;
+  border-radius: 0 !important;
 }
 
 .attachment {
-  margin-bottom : 0 !important;
+  margin-bottom: 0 !important;
 }
 
 /* -----------------------------------------------------------------------------

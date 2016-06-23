@@ -20,8 +20,8 @@ in this network
   flex: 1;
   margin: 10px;
 }
-.submit .button,
 
+.submit .button,
 #wpua-add-existing,
 #wpua-undo-existing,
 #wpua-remove-existing,
@@ -35,6 +35,7 @@ in this network
   padding: 10px 20px;
   text-align: center;
 }
+
 .wpmem_return_link a,
 .submit .button,
 #wpua-add-existing,
@@ -95,8 +96,16 @@ div.ninja-forms-form-wrap {
   flex-wrap: wrap-reverse;
 }
 
+.su-row-no-wrap {
+flex-wrap: nowrap !important;
+}
+
+.su-no-flex .su-column-inner a{
+ display:block !important;
+}
 .su-column {
   flex-grow: 1 !important;
+  align-self: flex-start;
 }
 
 .su-button {

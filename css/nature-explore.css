@@ -16,6 +16,18 @@
   font-style: italic;
 }
 
+.nep-button-padding span {
+padding: 0 !important;
+}
+
+.nep-leadership-logo  a {
+margin:auto;
+}
+
+.nep-leadership-logo  a img {
+border-radius: 8px
+}
+
 .nep-homepage-sidebar {
   flex-direction: column;
   margin-top: 75px;
@@ -25,7 +37,7 @@
 .nep-homepage-sidebar .background-green-light {
   border-radius: 0 25px 0 0;
   height: 100%;
-  padding-top: 15px;
+  padding: 15px 5px 15px;
 }
 
 .nep-homepage-sidebar div .widget ul,

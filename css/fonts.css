@@ -76,9 +76,14 @@ list-style: none;
 color: #ffffff;
 }
 
-li a {
+nav ul li a,
+.sidebar-nav li a {
 	font-weight: normal;
 }
+
+ul li { line-height: 1.6em; }
+
+ul#primary-menu li { line-height: normal; }
 
 ul {
 }

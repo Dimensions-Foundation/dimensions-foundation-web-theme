@@ -161,82 +161,84 @@ function my_add_excerpts_to_pages() {
 }
 
 
-/* -----------------------------------------------------------------------------
-*  Add site logo
-* ------------------------------------------------------------------------------
-*/
-function themeslug_theme_customizer( $wp_customize ) {
-	$wp_customize->add_section( 'themeslug_logo_section' , array(
-		'title' 				=> __( 'Logo', 'themeslug' ),
-		'priority' 			=> 30,
-		'description' 	=> 'Upload a logo to replace the default site name and description in the header',
-		) );
-		$wp_customize->add_setting( 'themeslug_logo' );
-		$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize,
-		'themeslug_logo', array(
-			'label' 		=> __( 'Logo', 'themeslug' ),
-			'section' 	=> 'themeslug_logo_section',
-			'settings' 	=> 'themeslug_logo',
-			)
+
+
+	/* -----------------------------------------------------------------------------
+	*  Add site logo
+	* ------------------------------------------------------------------------------
+	*/
+	function themeslug_theme_customizer( $wp_customize ) {
+		$wp_customize->add_section( 'themeslug_logo_section' , array(
+			'title' 				=> __( 'Logo', 'themeslug' ),
+			'priority' 			=> 30,
+			'description' 	=> 'Upload a logo to replace the default site name and description in the header',
 			) );
-		}
-		add_action('customize_register', 'themeslug_theme_customizer');
-
-
-		if(!function_exists('get_post_top_ancestor_id')){
-			/**
-			* Gets the id of the topmost ancestor of the current page. Returns the current
-			* page's id if there is no parent.
-			*
-			* @uses object $post
-			* @return int
-			*/
-			function get_post_top_ancestor_id(){
-				global $post;
-
-				if($post->post_parent){
-					$ancestors = array_reverse(get_post_ancestors($post->ID));
-					return $ancestors[0];
-				}
-
-				return $post->ID;
+			$wp_customize->add_setting( 'themeslug_logo' );
+			$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize,
+			'themeslug_logo', array(
+				'label' 		=> __( 'Logo', 'themeslug' ),
+				'section' 	=> 'themeslug_logo_section',
+				'settings' 	=> 'themeslug_logo',
+				)
+				) );
 			}
-		}
+			add_action('customize_register', 'themeslug_theme_customizer');
 
 
-		/*--------------------------------------------------------------------------
-		*  Ninja Form  Customizations
-		* --------------------------------------------------------------------------
-		*/
+			if(!function_exists('get_post_top_ancestor_id')){
+				/**
+				* Gets the id of the topmost ancestor of the current page. Returns the current
+				* page's id if there is no parent.
+				*
+				* @uses object $post
+				* @return int
+				*/
+				function get_post_top_ancestor_id(){
+					global $post;
 
-		/* To give Editors access to the ALL Forms menu		*/
-		function my_custom_change_ninja_forms_all_forms_capabilities_filter( $capabilities ) {
-			$capabilities = "edit_pages";
-			return $capabilities;
-		}
-		add_filter( 'ninja_forms_admin_parent_menu_capabilities', 'my_custom_change_ninja_forms_all_forms_capabilities_filter' );
-		add_filter( 'ninja_forms_admin_all_forms_capabilities', 'my_custom_change_ninja_forms_all_forms_capabilities_filter' );
+					if($post->post_parent){
+						$ancestors = array_reverse(get_post_ancestors($post->ID));
+						return $ancestors[0];
+					}
 
-		/* To give Editors access to ADD New Forms		*/
-		function my_custom_change_ninja_forms_add_new_capabilities_filter( $capabilities ) {
-			$capabilities = "edit_pages";
-			return $capabilities;
-		}
-		add_filter( 'ninja_forms_admin_parent_menu_capabilities', 'my_custom_change_ninja_forms_add_new_capabilities_filter' );
-		add_filter( 'ninja_forms_admin_add_new_capabilities', 'my_custom_change_ninja_forms_add_new_capabilities_filter' );
-
-		/**
-		* To give Editors access to the Submissions
-		* Simply replace ‘edit_posts’ in the code snippet below with the capability
-		* that you would like to attach the ability to view/edit submissions to.
-		* Please note that all three filters are needed to provide proper submission viewing/editing on the backend!
-		*/
-		function nf_subs_capabilities( $cap ) {
-			return 'edit_posts';
-		}
-		add_filter( 'ninja_forms_admin_submissions_capabilities', 'nf_subs_capabilities' );
-		add_filter( 'ninja_forms_admin_parent_menu_capabilities', 'nf_subs_capabilities' );
-		add_filter( 'ninja_forms_admin_menu_capabilities', 'nf_subs_capabilities' );
+					return $post->ID;
+				}
+			}
 
 
-		/* END FUNCTIONS.PHP */ ?>
+			/*--------------------------------------------------------------------------
+			*  Ninja Form  Customizations
+			* --------------------------------------------------------------------------
+			*/
+
+			/* To give Editors access to the ALL Forms menu		*/
+			function my_custom_change_ninja_forms_all_forms_capabilities_filter( $capabilities ) {
+				$capabilities = "edit_pages";
+				return $capabilities;
+			}
+			add_filter( 'ninja_forms_admin_parent_menu_capabilities', 'my_custom_change_ninja_forms_all_forms_capabilities_filter' );
+			add_filter( 'ninja_forms_admin_all_forms_capabilities', 'my_custom_change_ninja_forms_all_forms_capabilities_filter' );
+
+			/* To give Editors access to ADD New Forms		*/
+			function my_custom_change_ninja_forms_add_new_capabilities_filter( $capabilities ) {
+				$capabilities = "edit_pages";
+				return $capabilities;
+			}
+			add_filter( 'ninja_forms_admin_parent_menu_capabilities', 'my_custom_change_ninja_forms_add_new_capabilities_filter' );
+			add_filter( 'ninja_forms_admin_add_new_capabilities', 'my_custom_change_ninja_forms_add_new_capabilities_filter' );
+
+			/**
+			* To give Editors access to the Submissions
+			* Simply replace ‘edit_posts’ in the code snippet below with the capability
+			* that you would like to attach the ability to view/edit submissions to.
+			* Please note that all three filters are needed to provide proper submission viewing/editing on the backend!
+			*/
+			function nf_subs_capabilities( $cap ) {
+				return 'edit_posts';
+			}
+			add_filter( 'ninja_forms_admin_submissions_capabilities', 'nf_subs_capabilities' );
+			add_filter( 'ninja_forms_admin_parent_menu_capabilities', 'nf_subs_capabilities' );
+			add_filter( 'ninja_forms_admin_menu_capabilities', 'nf_subs_capabilities' );
+
+
+			/* END FUNCTIONS.PHP */ ?>
