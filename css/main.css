@@ -85,11 +85,15 @@ header,
   flex-wrap: wrap;
 }
 
+.site-logo {
+  margin:-10% auto 25px;
+  width: 100%;
+}
+
 .site-logo a img {
   border-radius: 0;
   margin-left: 18px;
-  margin-top: -20px;
-  position: absolute;
+
   width: 250px;
 }
 
@@ -184,7 +188,7 @@ aside {
   border-radius: 0 25px 0 0;
   flex: 2 225px;
   flex-direction: column;
-  margin-top: 160px;
+
   max-width: 275px;
 }
 
@@ -247,6 +251,7 @@ aside .fixed-position div div ul li:last-child,
 */
 main {
   flex: 3 475px;
+  margin-top: -145px;
   max-width: 675px;
   padding: 50px 25px 50px;
   width: 95%;
@@ -427,7 +432,7 @@ img.alignright {
 
 img {
   border-radius: 15px;
-height: inherit;;
+  height: inherit;;
   max-height: 100%;
   max-width: 100%;
 }

@@ -1,6 +1,5 @@
 <?php get_header(); ?>
 
-<section class="page-container background-white">
   <aside class="background-green-light">
     <?php dynamic_sidebar('home-sidebar'); ?>
   </aside>

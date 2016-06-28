@@ -3,7 +3,8 @@
 }
 
 .nep-logo a img {
-  margin-top: -40px !important;
+
+  /*margin-top: -40px !important;*/
 }
 
 .nep-primary-menu .design-nav {
@@ -17,21 +18,19 @@
 }
 
 .nep-button-padding span {
-padding: 0 !important;
+  padding: 0 !important;
 }
 
 .nep-leadership-logo  a {
-margin:auto;
+  margin: auto;
 }
 
 .nep-leadership-logo  a img {
-border-radius: 8px
+  border-radius: 8px;
 }
 
 .nep-homepage-sidebar {
   flex-direction: column;
-  margin-top: 75px;
-  padding-top: 25px;
 }
 
 .nep-homepage-sidebar .background-green-light {

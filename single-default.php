@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<section class="page-container background-white">
+
 		<aside class="background-green-light">
 			<div class=" fixed-position">
 				<?php dynamic_sidebar('community-sidebar'); ?>
