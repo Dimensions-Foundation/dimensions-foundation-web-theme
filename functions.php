@@ -85,6 +85,30 @@ function derf_add_widget_sidebar() {
 		'before_title'  => '<h4 class="custom-2-sidebar-header">',
 		'after_title'   => '</h4>',
 	) );
+	register_sidebar( array(
+		'name'          => 'Custom 3 Sidebar',
+		'id'            => 'custom-3_sidebar',
+		'before_widget' => '<div class="custom-3-sidebar-widget">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h4 class="custom-3-sidebar-header">',
+		'after_title'   => '</h4>',
+	) );
+	register_sidebar( array(
+		'name'          => 'Custom 4 Sidebar',
+		'id'            => 'custom-4_sidebar',
+		'before_widget' => '<div class="custom-4-sidebar-widget">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h4 class="custom-4-sidebar-header">',
+		'after_title'   => '</h4>',
+	) );
+	register_sidebar( array(
+		'name'          => 'Custom 5 Sidebar',
+		'id'            => 'custom-5_sidebar',
+		'before_widget' => '<div class="custom-5-sidebar-widget">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h4 class="custom-5-sidebar-header">',
+		'after_title'   => '</h4>',
+	) );
 	/*----------------------------------------------------------------------------
 	* Dimensions Foundation Widgets
 	*-----------------------------------------------------------------------------
