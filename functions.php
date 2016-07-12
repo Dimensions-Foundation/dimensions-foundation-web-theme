@@ -17,13 +17,13 @@ function derf_theme_styles() {
 	// Add fonts style - seperate to add to Editor style
 	wp_enqueue_style( 'fonts_css', get_template_directory_uri() . '/css/fonts.min.css' );
 	// Add custom style changes to plugins
-	wp_enqueue_style( 'custom_plugin_style_css', get_template_directory_uri() . '/css/custom-plugin-style.min.css' );
+	wp_enqueue_style( 'custom_plugin_style_css', get_template_directory_uri() . '/css/customle.min.css' );
 	// Add custom styles for dimensionsfoundation.org
-	wp_enqueue_style( 'dimensions_foundation_css', get_template_directory_uri() . '/css/dimensions-foundation.min.css' );
+	wp_enqueue_style( 'dimensions_foundation_css', get_template_directory_uri() . '/css/derf.min.css' );
 	// Add custom styles for dimensionsed.org
-	wp_enqueue_style( 'dimensions_education_programs_css', get_template_directory_uri() . '/css/dimensions-education-programs.min.css' );
+	wp_enqueue_style( 'dimensions_education_programs_css', get_template_directory_uri() . '/css/dep.min.css' );
 	// Add custom styles for natureexplore.org
-	wp_enqueue_style( 'nature_explore_css', get_template_directory_uri() . '/css/nature-explore.min.css' );
+	wp_enqueue_style( 'nature_explore_css', get_template_directory_uri() . '/css/nep.min.css' );
 }
 
 add_action( 'wp_enqueue_scripts', 'derf_theme_styles');
