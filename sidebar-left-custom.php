@@ -1,7 +1,6 @@
 <?php get_header(); ?>
 <?php /* Template Name: Sidebar - Custom 1 */ ?>
 
-<section class="page-container background-white">
     <aside class="background-green-light">
       <div class=" fixed-position">
         <?php $children = get_pages('child_of='.get_post_top_ancestor_id()); ?>

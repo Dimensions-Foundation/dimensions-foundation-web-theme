@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<section class="page-container background-green-medium-light">
+
   <aside class="nep-homepage-sidebar">
     <?php dynamic_sidebar( 'above_home_sidebar' ); ?>
     <div  class="background-green-light" >

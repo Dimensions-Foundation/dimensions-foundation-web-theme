@@ -1,3 +1,7 @@
+.derf-primary-menu li {
+flex: inherit !important;
+}
+
 .derf-homepage {
   padding: 75px 0 0 !important;
 }
@@ -5,8 +9,6 @@
 .derf-homepage-intro {
   align-self: flex-end;
   color: #174a7c;
-  clear: both;
-  float: right;
   font-size: 16pt;
   font-style: italic;
   margin-top: -75px;

@@ -9,6 +9,7 @@ $blog_url = get_home_url();
 $site_logo_class = '';
 $site_top_container_class = 'background-blue';
 $site_primary_menu_class = 'horizontal-menu';
+$section_class = 'page-container  background-white';
 
 if ( strstr( $blog_url, 'dimensionsfoundation.org' ) ) {
   $site_logo_class = 'derf-logo';
@@ -22,6 +23,9 @@ if ( strstr( $blog_url, 'dimensionsfoundation.org' ) ) {
   $site_logo_class = 'nep-logo';
   $site_top_container_class .= ' nep-top-menu';
   $site_primary_menu_class .= " nep-primary-menu";
+  if  (is_front_page() ) {
+    $section_class = 'page-container  background-green-medium-light';
+  }
 }
 
 ?>
@@ -48,7 +52,7 @@ if ( strstr( $blog_url, 'dimensionsfoundation.org' ) ) {
 
 wp_nav_menu( $defaults );	?>
 <header>
-  <div class="<?php echo 'site-logo ' . $site_logo_class; ?>"><a href='<?php echo get_site_url( 1 ); ?>' title='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>' rel='home'><img src='<?php echo esc_url( get_theme_mod( 'themeslug_logo' ) ); ?>' alt='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>'></a></div>
+
   <?php $defaults = array(
     'theme_location' 		=> 'primary-menu-location',
     'container'				=> 'nav',
@@ -62,3 +66,6 @@ wp_nav_menu( $defaults );	?>
 </header>
 
 <body <?php body_class(); ?>>
+
+  <section class="<?php echo $section_class; ?>">
+    <div class="<?php echo 'site-logo ' . $site_logo_class; ?>"><a href='<?php echo get_site_url( 1 ); ?>' title='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>' rel='home'><img src='<?php echo esc_url( get_theme_mod( 'themeslug_logo' ) ); ?>' alt='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>'></a></div>
