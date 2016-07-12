@@ -84,6 +84,23 @@
   -webkit-padding-start: 15px;
 }
 
+
+.nep-design-slider {
+  background: #755725;
+  border-radius: 15px 15px 0 0;
+  justify-content: center;
+  max-width: 600px;
+  width: 100%;
+  margin: 10px auto;
+}
+}
+
+.nep-design-slider h1 {
+  color: #ffffff;
+  padding: 10px;
+}
+
+
 @media (max-width: 800px) {
   .nep-homepage-sidebar div {
     border-radius: 0;
