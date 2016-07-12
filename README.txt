@@ -19,8 +19,8 @@ Changes to B (Structure change):
 Changes to C (Nature Explore Program  Update):
 - These updates are made that only effect the Nature Explore Program domain.
 
-Changes to C (Dimensions Education Programs Update):
+Changes to D (Dimensions Education Programs Update):
 - These updates are made that only effect the Dimensions Education Programs domain.
 
-Changes to C (Dimensions Foundation Update):
+Changes to E (Dimensions Foundation Update):
 - These updates are made that only effect the Dimensions Foundation domain.

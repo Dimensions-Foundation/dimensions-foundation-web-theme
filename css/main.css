@@ -86,14 +86,13 @@ header,
 }
 
 .site-logo {
-  margin:-10% auto 25px;
+  margin: -10% auto 25px;
   width: 100%;
 }
 
 .site-logo a img {
   border-radius: 0;
   margin-left: 18px;
-
   width: 250px;
 }
 
@@ -174,7 +173,7 @@ header,
 #full-page-container {
   display: flex;
   flex-direction: column;
-  padding: 150px 25px 25px;
+  padding: 25px;
   max-width: 960px;
   width: 100%;
 }
@@ -188,13 +187,11 @@ aside {
   border-radius: 0 25px 0 0;
   flex: 2 225px;
   flex-direction: column;
-
   max-width: 275px;
 }
 
 .fixed-position {
-  padding: 25px 15px 25px;
-  width: 90%;
+  padding: 25px 10px;
 }
 
 aside .fixed-position div div ul {
@@ -432,7 +429,7 @@ img.alignright {
 
 img {
   border-radius: 15px;
-  height: inherit;;
+  height: inherit;
   max-height: 100%;
   max-width: 100%;
 }
@@ -506,8 +503,13 @@ img {
     width: 90%;
   }
 
-  #top-menu-container,
-  header {
+  main {
+    margin-top: 0;
+  }
+
+  header,
+  .site-logo,
+  #top-menu-container {
     display: none !important;
   }
 

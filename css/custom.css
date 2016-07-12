@@ -45,6 +45,18 @@ in this network
   padding: 5px 10px;
 }
 
+.button_div {
+  display: flex;
+}
+
+.button_div  input[type="checkbox"] {
+  margin: 4px 2px !important;
+}
+
+.button_div  input[type="submit"] {
+  margin: auto !important;
+}
+
 /*
 *
 * Ninja Forms Custom CSS
@@ -97,12 +109,13 @@ div.ninja-forms-form-wrap {
 }
 
 .su-row-no-wrap {
-flex-wrap: nowrap !important;
+  flex-wrap: nowrap !important;
 }
 
-.su-no-flex .su-column-inner a{
- display:block !important;
+.su-no-flex .su-column-inner a {
+  display: initial !important;
 }
+
 .su-column {
   flex-grow: 1 !important;
   align-self: flex-start;
@@ -139,14 +152,21 @@ flex-wrap: nowrap !important;
   padding-top: .5em;
 }
 
-.su-slider {
-  max-width: 450px !important;
-}
 
-.su-slider-slide-title {
-  display: none !important;
+.su-slider-slide a img {
+border-radius: 0;
 }
 
 .su-posts li a {
   font-weight: normal;
+}
+
+.product-info.su-row {
+  display: block !important;
+}
+
+.product-info .gallery-columns-3 dl {
+  border: 1px solid #58585a;
+  margin: 10px 1.4% 10px;
+  width: 30% !important;
 }
