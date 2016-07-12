@@ -13,7 +13,6 @@
         </ul>
         <?php } ?>
         <?php dynamic_sidebar( 'community_sidebar' ); ?>
-        <?php dynamic_sidebar( 'newsletter_sidebar' ); ?>
       </div>
     </aside>
     <main>
