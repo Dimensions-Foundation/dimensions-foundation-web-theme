@@ -56,7 +56,7 @@ add_settings_section (
 
 add_settings_field (
 'derf-footer-background-color',
-'Footer BackgroundColor',
+'Footer Background Color',
 'derf_footer_bg_color_callback',
 'derf-settings',
 'derf-footer-settings-section'
