@@ -33,7 +33,7 @@
 }
 
 .background-red-light {
-  background-color: red  !important;
+  background-color: red !important;
 }
 
 .background-green-light,
@@ -268,6 +268,57 @@ main {
 }
 
 /* -----------------------------------------------------------------------------
+* Posts
+* ------------------------------------------------------------------------------
+*/
+.blog-post {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.blog-post .blog-post-title {
+  width: 100%;
+  flex: 4 600px;
+}
+
+.blog-post .blog-post-thumb {
+  flex: 1 150px;
+}
+
+.blog-post .blog-post-thumb ~ p {
+  flex: 3 300px;
+}
+
+.blog-post-date-meta-container {
+  font-size: .9em;
+  display: flex;
+  width: 100%;
+  padding: 0 10px 0;
+}
+
+.blog-post-date-published {
+  flex: 1;
+}
+
+.blog-post-date-meta-container .post-meta {
+  list-style-type: none;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 0;
+  flex: 1;
+}
+
+.blog-post-date-meta-container .post-meta li {
+  line-height: initial;
+}
+
+.blog-post-date-meta-container .post-meta li  .post-meta-key {
+  font-weight: bold;
+}
+
+/* -----------------------------------------------------------------------------
 * Footer
 * ------------------------------------------------------------------------------
 */
@@ -288,6 +339,7 @@ footer div {
   padding-bottom: 10px;
   text-align: center;
 }
+
 .footer-alert p {
   color: #ffffff;
 }
@@ -326,14 +378,14 @@ footer div {
   padding: 15px;
   text-align: center;
 }
+
 /* -----------------------------------------------------------------------------
 *  inputs
 * ------------------------------------------------------------------------------
 */
 .textarea-full-width {
-width: 100% !important;
+  width: 100% !important;
 }
-
 
 /* -----------------------------------------------------------------------------
 *  Gallery
