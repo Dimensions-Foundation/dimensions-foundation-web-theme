@@ -61,22 +61,42 @@ in this network
 *
 * Ninja Forms Custom CSS
 */
+.ninja-forms-mp-breadcrumbs {
+  border-bottom: 1px solid #174a4c;
+  padding-bottom: 15px;
+}
+
+.hp-wrap ~ h4,
+#ninja_forms_form_19_cont h4 {
+  background: #d2e7b5;
+  border: 3px solid #174a7c;
+  border-bottom: 0;
+  border-radius: 12px 12px 0 0;
+  color: #174a4c;
+  font-size: 1.75em;
+  padding-top: 5px;
+}
+
 .ninja-forms-cont table {
-  margin-bottom: 5px;
-  padding: 10px 5px 10px;
-  border-radius: 12px;
-  background: rgba(80, 80, 80, 0.25);
+  background: #d2e7b5;
+  border: 3px solid #174a7c;
+  border-radius: 0 0 12px 12px;
+  margin: 0;
+  padding: 10px 15px;
+  width: 100%;
+  border-top: 0;
 }
 
 .ninja-forms-cont table tbody tr td {
   background: #ffffff;
+  text-align: center;
 }
 
 div.ninja-forms-form-wrap {
   background: none !important;
 }
 
-#ninja_forms_form_15_save_progress {
+#ninja_forms_form_19_save_progress {
   font-size: 10pt !important;
 }
 
@@ -152,9 +172,8 @@ div.ninja-forms-form-wrap {
   padding-top: .5em;
 }
 
-
 .su-slider-slide a img {
-border-radius: 0;
+  border-radius: 0;
 }
 
 .su-posts li a {

@@ -17,7 +17,7 @@ function derf_theme_styles() {
 	// Add fonts style - seperate to add to Editor style
 	wp_enqueue_style( 'fonts_css', get_template_directory_uri() . '/css/fonts.min.css' );
 	// Add custom style changes to plugins
-	wp_enqueue_style( 'custom_plugin_style_css', get_template_directory_uri() . '/css/customle.min.css' );
+	wp_enqueue_style( 'custom_plugin_style_css', get_template_directory_uri() . '/css/custom.min.css' );
 	// Add custom styles for dimensionsfoundation.org
 	wp_enqueue_style( 'dimensions_foundation_css', get_template_directory_uri() . '/css/derf.min.css' );
 	// Add custom styles for dimensionsed.org
@@ -56,7 +56,7 @@ add_settings_section (
 
 add_settings_field (
 'derf-footer-background-color',
-'Footer Background Color',
+'Footer BackgroundColor',
 'derf_footer_bg_color_callback',
 'derf-settings',
 'derf-footer-settings-section'
@@ -114,12 +114,14 @@ function derf_footer_alert_checkbox_callback() {
 
 
 function derf_footer_alert_textbox_callback() {
+
 	$options = get_option( 'derf-footer-settings' );
 	if( !isset( $options['alert_text'] ) ) $options['alert_text'] = '';
 
 	$html= "<textarea id='derf-footer-alert-text' name='derf-footer-settings[alert_text]' style='width:100%' > " . $options['alert_text']. " </textarea>";
 
 	echo $html;
+
 
 }
 
