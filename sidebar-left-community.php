@@ -21,6 +21,7 @@
           <?php if ( has_post_thumbnail() ) {
             the_post_thumbnail( 'feature-image' ); } ?>
           </div>
+<h1><?php the_title(); ?></h1>
           <?php the_content(); ?>
         <?php endwhile; else : ?>
           <p>

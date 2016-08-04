@@ -21,6 +21,12 @@ in this network
   margin: 10px;
 }
 
+#wpmem_login,
+#wpmem_reg,
+.post-password-form {
+  margin: 100px auto;
+}
+
 .submit .button,
 #wpua-add-existing,
 #wpua-undo-existing,

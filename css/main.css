@@ -170,6 +170,11 @@ header,
   padding: 10px 10px 10px;
 }
 
+#primary-menu li.current-menu-item a {
+  background: #ffffff !important ;
+  color: #174a7c;
+}
+
 #primary-menu .mobile-button {
   display: none;
 }
