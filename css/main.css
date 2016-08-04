@@ -170,7 +170,8 @@ header,
   padding: 10px 10px 10px;
 }
 
-#primary-menu li.current-menu-item a {
+#primary-menu li.current-menu-item a,
+#primary-menu li.current-page-ancestor a {
   background: #ffffff !important ;
   color: #174a7c;
 }
