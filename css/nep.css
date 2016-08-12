@@ -8,7 +8,7 @@
 }
 
 .nep-primary-menu .design-nav {
-  flex: 1.25 !important;
+  flex: 1 200px !important;
 }
 
 .nep-homepage-intro ~ p {

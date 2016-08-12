@@ -44,6 +44,11 @@ function derf_theme_init() {
 	'derf-footer-settings'
 );
 
+register_setting (
+'derf-settings-group',
+'derf-blog-settings'
+);
+
 
 // Footer Alert Section
 
@@ -92,7 +97,21 @@ add_settings_field (
 'derf-footer-settings-section'
 );
 
+// New Section
+add_settings_section (
+'derf-blog-settings-section',
+'Blog Settings',
+'derf_blog_settings_callback',
+'derf-settings'
+);
 
+add_settings_field (
+'derf-blog-name-textarea',
+'Blog Name',
+'derf_blog_name_textarea_callback',
+'derf-settings',
+'derf-blog-settings-section'
+);
 
 }
 
@@ -160,6 +179,19 @@ function derf_footer_copyright_textarea_callback() {
 	if( !isset( $options['copyright_text'] ) ) $options['copyright_text'] = '';
 
 	$html= "<textarea id='derf-footer-copyright-textarea' name='derf-footer-settings[copyright_text]' style='width:100%' > " . $options['copyright_text']. " </textarea>";
+
+	echo $html;
+}
+
+function derf_blog_settings_callback() {
+	// Nothing Needed
+}
+
+function derf_blog_name_textarea_callback() {
+	$options = get_option( 'derf-blog-settings' );
+	if( !isset( $options['blog_name_text'] ) ) $options['blog_name_text'] = '';
+
+	$html= "<textarea id='derf-blog-name-textarea' name='derf-blog-settings[blog_name_text]' style='width:100%' > " . $options['blog_name_text']. " </textarea>";
 
 	echo $html;
 }
@@ -452,6 +484,58 @@ function derf_theme_options_page() { ?>
 			}
 
 
+
+			/**
+			* Filter the "read more" excerpt string link to the post.
+			*
+			* @param string $more "Read more" excerpt string.
+			* @return string (Maybe) modified "read more" excerpt string.
+			*/
+			function wpdocs_excerpt_more( $more ) {
+				if ( !is_search() ) {
+					return sprintf( '...<br /> <a class="read-more" href="%1$s">%2$s</a>',
+					get_permalink( get_the_ID() ),
+					__( 'Read More', 'textdomain' )
+				);
+			} else {
+				return sprintf( '...<br /> <a class="search-read-more " href="%1$s">%2$s</a>',
+				get_permalink( get_the_ID() ),
+				__( ' ', 'textdomain' )
+);
+			}
+		}
+		add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );
+
+
+		/*
+		* Edit Author Meta  data
+		*/
+
+		add_action('show_user_profile', 'my_user_profile_edit_action');
+		add_action('edit_user_profile', 'my_user_profile_edit_action');
+		function my_user_profile_edit_action($user) {
+			?>
+			<h2>User Title/Position</h2>
+			<table class="form-table">
+				<tbody>
+					<tr>
+						<th>
+							<label for="title_position">
+								Title/Position  </label>
+							</th>
+							<td><input type="text" name="title_position" value="<?php echo esc_attr(get_the_author_meta( 'title_position', $user->ID )); ?>" class="regular-text" /></td>
+						</tr>
+					</tbody>
+				</table>
+				<br />
+				<?php
+			}
+
+			add_action('personal_options_update', 'my_user_profile_update_action');
+			add_action('edit_user_profile_update', 'my_user_profile_update_action');
+			function my_user_profile_update_action($user_id) {
+				update_user_meta( $user_id,'title_position', sanitize_text_field( $_POST['title_position'] ) );
+			}
 
 
 			/* END FUNCTIONS.PHP */ ?>
