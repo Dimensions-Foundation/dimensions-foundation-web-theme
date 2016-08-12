@@ -1,6 +1,7 @@
 <?php
 $site_url = get_home_url();
-$options = get_option( 'derf-footer-settings');
+$footer_options = get_option( 'derf-footer-settings');
+
 $footer_menu_css = 'horizontal-menu line-break';
 $social_menu_container_css = ' ';
 
@@ -14,16 +15,16 @@ if ( strstr( $site_url, 'natureexplore.org' ) ) {
 	$footer_menu_css .= ' derf-footer-menu';
 
 }
-$footer_background_class = ' ' . $options['bg_color'];
+$footer_background_class = ' ' . $footer_options['bg_color'];
 ?>
 <footer class="<?php echo $footer_background_class; ?>">
 	<?
 
-	if ( isset( $options['show_alert'] ) && $options['show_alert'] ) {
-		$footer_alert_class ="footer-alert " .  $options['alert_bg_color'];
+	if ( isset( $footer_options['show_alert'] ) && $footer_options['show_alert'] ) {
+		$footer_alert_class ="footer-alert " .  $footer_options['alert_bg_color'];
 		?>
 		<div class="<?php echo $footer_alert_class; ?>">
-			<p><?php echo $options['alert_text']; ?></p>
+			<p><?php echo $footer_options['alert_text']; ?></p>
 
 		</div>
 		<?php } ?>
@@ -55,7 +56,7 @@ $footer_background_class = ' ' . $options['bg_color'];
 	</footer>
 </section>
 <div id="copyright" class="<?php echo $footer_copyright_color ;  ?>"  >
-	<?php echo $options['copyright_text'] ?>
+	<?php echo $footer_options['copyright_text'] ?>
 </div>
 <?php wp_footer(); ?>
 </body></html>

@@ -123,20 +123,21 @@ header,
 /* ----------- Top Menu ----------- */
 #top-menu-container {
   display: flex;
-  height: 50px;
+  height: 40px;
   margin-bottom: 50px;
   text-align: center;
   width: 100%;
 }
 
 #top-menu {
+  -webkit-padding-start: 0px;
   margin: auto;
   justify-content: center;
   width: 100%;
 }
 
 #top-menu li a {
-  font-size: 9pt;
+  font-size: 7pt;
 }
 
 /* ----------- Primary Menu ----------- */
@@ -155,7 +156,6 @@ header,
 
 #primary-menu li {
   background: none !important;
-  flex: 1;
   margin: 5px 2px 0;
 }
 
@@ -172,7 +172,7 @@ header,
 
 #primary-menu li.current-menu-item a,
 #primary-menu li.current-page-ancestor a {
-  background: #ffffff !important ;
+  background: #ffffff !important;
   color: #174a7c;
 }
 
@@ -184,6 +184,7 @@ header,
   display: flex;
   flex-direction: column;
   padding: 25px;
+  margin: 0 auto;
   max-width: 960px;
   width: 100%;
 }
@@ -252,6 +253,31 @@ aside .fixed-position div div ul li:last-child,
   padding-top: .75em;
 }
 
+.community-widget {
+  border-bottom: 1px solid #58585a;
+  margin-bottom: 10px;
+}
+
+.community-widget form div {
+  display: flex;
+  flex-direction: column;
+}
+
+.community-widget form div label {
+  display: none;
+}
+
+.community-widget form div input[type="submit"] {
+  align-self: center;
+  border: 0;
+  border-radius: 8px;
+  background: #9fc24d;
+  color: #ffffff;
+  margin: 5px;
+  padding: 5px;
+  width: 50%;
+}
+
 /* -----------------------------------------------------------------------------
 * Main Content
 * ------------------------------------------------------------------------------
@@ -266,6 +292,7 @@ main {
 
 .page-feature-img {
   margin-bottom: 15px;
+  padding-left: 10px;
   text-align: center;
 }
 
@@ -296,14 +323,18 @@ main {
 }
 
 .blog-post-date-meta-container {
-  font-size: .9em;
   display: flex;
+  font-size: .9em;
+  padding: 0 10px 10px;
   width: 100%;
-  padding: 0 10px 0;
 }
 
 .blog-post-date-published {
   flex: 1;
+}
+
+.blog-post-author {
+  flex: 2;
 }
 
 .blog-post-date-meta-container .post-meta {
@@ -322,6 +353,15 @@ main {
 
 .blog-post-date-meta-container .post-meta li  .post-meta-key {
   font-weight: bold;
+}
+
+.read-more {
+  background: #9fc24d;
+  border-radius: 5px;
+  color: #ffffff;
+  font-weight: normal;
+  line-height: 2.5;
+  padding: 5px 10px;
 }
 
 /* -----------------------------------------------------------------------------
@@ -371,7 +411,7 @@ footer div {
 }
 
 #footer-menu li {
-  font-size: 10pt;
+  font-size: 9pt;
 }
 
 #social-menu li a {
