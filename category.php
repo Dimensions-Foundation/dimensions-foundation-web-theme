@@ -21,13 +21,14 @@
         <h3 class="blog-post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
         <div class="blog-post-date-meta-container">
           <div class="blog-post-date-published">
+            <strong>Author:</strong> <?php the_author(); echo ", " ; the_author_meta('title_position'); ?>
+            <br />
             <strong>Published:</strong> <?php the_date(); ?>
           </div>
-          <?php  the_meta(); ?>
         </div>
         <?php if ( has_post_thumbnail() ) : ?>
           <div class="page-feature-img blog-post-thumb">
-            <?php   the_post_thumbnail( 'feature-image' ); ?>
+          <a href="<?php the_permalink(); ?>">  <?php   the_post_thumbnail( 'feature-image' ); ?></a>
           </div>
         <?php endif;?>
 

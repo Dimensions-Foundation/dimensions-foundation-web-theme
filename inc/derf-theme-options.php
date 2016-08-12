@@ -98,7 +98,7 @@ add_settings_field (
 'derf-footer-settings-section'
 );
 
-// New Section
+// Blog Section
 add_settings_section (
 'derf-blog-settings-section',
 'Blog Settings',
@@ -113,6 +113,15 @@ add_settings_field (
 'derf-settings',
 'derf-blog-settings-section'
 );
+
+add_settings_field (
+'derf-blog-count',
+'Blog Post to Show on Home',
+'derf_blog_count_callback',
+'derf-settings',
+'derf-blog-settings-section'
+);
+
 
 }
 
@@ -184,6 +193,8 @@ function derf_footer_copyright_textarea_callback() {
   echo $html;
 }
 
+// Blog Section
+
 function derf_blog_settings_callback() {
   // Nothing Needed
 }
@@ -192,7 +203,16 @@ function derf_blog_name_textarea_callback() {
   $options = get_option( 'derf-blog-settings' );
   if( !isset( $options['blog_name_text'] ) ) $options['blog_name_text'] = '';
 
-  $html= "<textarea id='derf-blog-name-textarea' name='derf-blog-settings[blog_name_text]' style='width:100%' > " . $options['blog_name_text']. " </textarea>";
+  $html= "<input type='text' id='derf-blog-name-textarea' name='derf-blog-settings[blog_name_text]' style='width:300px' value='" . $options['blog_name_text']. "'>";
+
+  echo $html;
+}
+
+function derf_blog_count_callback() {
+  $options = get_option( 'derf-blog-settings' );
+  if( !isset( $options['blog_count'] ) ) $options['blog_count'] = '10';
+
+  $html= "<input type='number' id='derf-blog-count' name='derf-blog-settings[blog_count]' style='width:50px' value='" . $options['blog_count']. "'>";
 
   echo $html;
 }
