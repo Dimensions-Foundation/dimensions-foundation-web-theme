@@ -1,9 +1,15 @@
 <?php
 if ( ! isset( $content_width ) ) $content_width = 960;
 
+	// Add in Custom Theme Options
+require get_template_directory() . '/inc/derf-customizer.php';
+	// Add in Custom Theme Options
 require get_template_directory() . '/inc/derf-theme-options.php';
+	// Add in Custom Meta Boxes
 require get_template_directory() . '/inc/derf-meta-boxes.php';
+	// Add in Support for WooCommerce
 require get_template_directory() . '/inc/derf-woocommerce-support.php';
+	// Add in Support for NinjaForms
 require get_template_directory() . '/inc/derf-ninja-forms-custom.php';
 
 /* -----------------------------------------------------------------------------
@@ -106,6 +112,14 @@ function derf_add_widget_sidebar() {
 		'before_widget' => '<div class="custom-5-sidebar-widget">',
 		'after_widget'  => '</div>',
 		'before_title'  => '<h4 class="custom-5-sidebar-header">',
+		'after_title'   => '</h4>',
+	) );
+	register_sidebar( array(
+		'name'          => 'Custom 6 Sidebar',
+		'id'            => 'custom-6_sidebar',
+		'before_widget' => '<div class="custom-6-sidebar-widget">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h4 class="custom-6-sidebar-header">',
 		'after_title'   => '</h4>',
 	) );
 	/*----------------------------------------------------------------------------

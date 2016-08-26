@@ -17,6 +17,58 @@
   font-style: italic;
 }
 
+#nep-homepage-hero-photo a {
+  display: flex;
+  flex-direction: column;
+}
+
+#nep-homepage-hero-photo img,
+#nep-homepage-hero-photo #nep-homepage-hero-caption-container {
+  flex: 1;
+}
+
+#nep-homepage-hero-caption-container {
+  color: #fff;
+  background: rgba(159, 194, 77, .75);
+  border-radius: 0 0 15px 15px;
+  display: flex;
+  text-align: right;
+  margin-top: -85px;
+
+}
+
+#nep-homepage-hero-caption-content {
+  align-items: center;
+  color: #ffffff;
+  display: flex;
+  flex: 5;
+  font-weight: normal;
+  justify-content: flex-end;
+  margin-right: 10px;
+}
+
+#nep-homepage-hero-caption-graphic {
+  background: url(../images/arrow_white.png) no-repeat;
+  background-size: contain;
+  flex: 1;
+  height: 75px;
+  padding: 5px;
+  width: 75px;
+}
+
+#nep-homepage-hero-photo:hover #nep-homepage-hero-caption-container {
+  background: rgba(255, 255, 255, 0.85);
+}
+
+#nep-homepage-hero-photo:hover #nep-homepage-hero-caption-content {
+  color: #9e8966;
+}
+
+#nep-homepage-hero-photo:hover #nep-homepage-hero-caption-graphic {
+  background: url(../images/arrow_brown.png) no-repeat;
+  background-size: contain;
+}
+
 .nep-button-padding span {
   padding: 0 !important;
 }
@@ -35,7 +87,6 @@
 
 .nep-homepage-sidebar .background-green-light {
   border-radius: 0 25px 0 0;
-  height: 100%;
   padding: 15px 5px 15px;
 }
 
@@ -93,7 +144,7 @@
   width: 100%;
   margin: 10px auto;
 }
-}
+
 
 .nep-design-slider h1 {
   color: #ffffff;
@@ -104,5 +155,12 @@
 @media (max-width: 800px) {
   .nep-homepage-sidebar div {
     border-radius: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  #nep-homepage-hero-caption-container {
+    font-size: .8em;
+    margin-top: -55px;
   }
 }

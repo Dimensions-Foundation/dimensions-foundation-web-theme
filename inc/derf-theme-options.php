@@ -50,6 +50,11 @@ function derf_theme_options_page() { ?>
   'derf-blog-settings'
 );
 
+register_setting (
+'derf-settings-group',
+'derf-homepage-settings'
+);
+
 
 // Footer Alert Section
 
@@ -62,7 +67,7 @@ add_settings_section (
 
 add_settings_field (
 'derf-footer-background-color',
-'Footer BackgroundColor',
+'Footer Background Color',
 'derf_footer_bg_color_callback',
 'derf-settings',
 'derf-footer-settings-section'
@@ -120,6 +125,23 @@ add_settings_field (
 'derf_blog_count_callback',
 'derf-settings',
 'derf-blog-settings-section'
+);
+
+
+// Homepage Section
+add_settings_section (
+'derf-homepage-settings-section',
+'Homepage Settings',
+'derf_homepage_settings_callback',
+'derf-settings'
+);
+
+add_settings_field (
+'derf-hero-photo',
+'Hero Photo Label',
+'derf_hero_photo_callback',
+'derf-settings',
+'derf-homepage-settings-section'
 );
 
 

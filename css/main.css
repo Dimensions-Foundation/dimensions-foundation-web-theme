@@ -231,6 +231,10 @@ aside .fixed-position div div ul li:last-child,
 .sidebar-nav li:last-child {
   border: none;
 }
+aside .fixed-position div div ul li a {
+  font-weight: normal !important;
+}
+
 
 /* ----------- Sidebar Nav ----------- */
 .custom-sidebar-header,
@@ -275,6 +279,18 @@ aside .fixed-position div div ul li:last-child,
 
 .community-widget form div label {
   display: none;
+}
+
+.community-widget ul li a {
+font-weight: normal;
+}
+
+.community-widget select {
+  margin: 10px;
+}
+
+.community-widget-header ~ .screen-reader-text {
+  display: none ;
 }
 
 /* -----------------------------------------------------------------------------
@@ -573,6 +589,7 @@ img {
 .attachment {
   margin-bottom: 0 !important;
 }
+
 
 /* -----------------------------------------------------------------------------
 *  Media Queries
