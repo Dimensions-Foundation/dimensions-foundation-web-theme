@@ -36,10 +36,19 @@ if ( strstr( $blog_url, 'dimensionsfoundation.org' ) ) {
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>
     <?php wp_title(); ?>
   </title>
   <?php wp_head(); ?>
+  <script type='text/javascript'>
+(function (d, t) {
+  var bh = d.createElement(t), s = d.getElementsByTagName(t)[0];
+  bh.type = 'text/javascript';
+  bh.src = 'https://www.bugherd.com/sidebarv2.js?apikey=f4rxne7flxexs3bcjhzrrg';
+  s.parentNode.insertBefore(bh, s);
+  })(document, 'script');
+</script>
 </head>
 <?php $defaults = array(
   'theme_location' 		=> 'top-menu-location',
@@ -51,6 +60,7 @@ if ( strstr( $blog_url, 'dimensionsfoundation.org' ) ) {
 );
 
 wp_nav_menu( $defaults );	?>
+
 <header>
 
   <?php $defaults = array(

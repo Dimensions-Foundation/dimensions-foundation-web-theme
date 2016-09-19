@@ -1,9 +1,4 @@
-<?php get_header();
-$blog_options = get_option( 'derf-blog-settings');
-$blog_name = $blog_options['blog_name_text'];
-$blog_post_count = $blog_options['blog_count'];
-
-?>
+<?php get_header(); ?>
 
 <aside class="background-green-light">
   <div class=" fixed-position">
@@ -20,9 +15,8 @@ $blog_post_count = $blog_options['blog_count'];
     </div>
   </aside>
   <main>
-    <h1><?php echo $blog_name ?></h1>
-    <?php if ( have_posts() ) : while ( have_posts() && ($blog_post_count > 0) ) : the_post(); ?>
-<br />
+    <h1>Posts from <?php the_date('F Y'); ?></h1><hr />
+    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
       <article class="blog-post">
         <h3 class="blog-post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
         <div class="blog-post-date-meta-container">
@@ -41,7 +35,7 @@ $blog_post_count = $blog_options['blog_count'];
         <?php the_excerpt(); ?>
       </article>
       <hr />
-    <?php $blog_post_count--; endwhile; else : ?>
+    <?php endwhile; else : ?>
       <p>
         <?php _e( 'Sorry, There is nothing to display. '); ?>
       </p>

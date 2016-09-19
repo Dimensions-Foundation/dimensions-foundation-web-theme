@@ -100,6 +100,16 @@ header,
   width: 250px;
 }
 
+input[type="submit"] {
+  align-self: center;
+  border: 0;
+  border-radius: 8px;
+  background: #9fc24d;
+  color: #ffffff;
+  margin: 5px;
+  padding: 5px;
+}
+
 /* -----------------------------------------------------------------------------
 * Navigation
 * ------------------------------------------------------------------------------
@@ -221,6 +231,10 @@ aside .fixed-position div div ul li:last-child,
 .sidebar-nav li:last-child {
   border: none;
 }
+aside .fixed-position div div ul li a {
+  font-weight: normal !important;
+}
+
 
 /* ----------- Sidebar Nav ----------- */
 .custom-sidebar-header,
@@ -267,15 +281,16 @@ aside .fixed-position div div ul li:last-child,
   display: none;
 }
 
-.community-widget form div input[type="submit"] {
-  align-self: center;
-  border: 0;
-  border-radius: 8px;
-  background: #9fc24d;
-  color: #ffffff;
-  margin: 5px;
-  padding: 5px;
-  width: 50%;
+.community-widget ul li a {
+font-weight: normal;
+}
+
+.community-widget select {
+  margin: 10px;
+}
+
+.community-widget-header ~ .screen-reader-text {
+  display: none ;
 }
 
 /* -----------------------------------------------------------------------------
@@ -362,6 +377,28 @@ main {
   font-weight: normal;
   line-height: 2.5;
   padding: 5px 10px;
+}
+
+/* -----------------------------------------------------------------------------
+* Comment Section
+* ------------------------------------------------------------------------------
+*/
+.comment-container {
+  background: rgba(159, 194, 77, 0.2);
+}
+
+.comment-container .comment-respond,
+.comment-container .comment-list .comment {
+  border-top: 1px solid #58585a;
+  padding: 10px;
+}
+
+.comment-container .comment-list .thread-even {
+  background: rgba(159, 194, 77, 0.3);
+}
+
+.comment-container .comment-list .thread-odd {
+  background: rgba(159, 194, 77, 0.1);
 }
 
 /* -----------------------------------------------------------------------------
@@ -552,6 +589,7 @@ img {
 .attachment {
   margin-bottom: 0 !important;
 }
+
 
 /* -----------------------------------------------------------------------------
 *  Media Queries

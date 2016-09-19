@@ -43,6 +43,7 @@ function derf_add_meta_box_callback( $post ) {
           <option value="sidebar3" <?php if($dropdown_value == 'sidebar3') echo 'selected'; ?>>Sidebar 3</option>
           <option value="sidebar4" <?php if($dropdown_value == 'sidebar4') echo 'selected'; ?>>Sidebar 4</option>
           <option value="sidebar5" <?php if($dropdown_value == 'sidebar5') echo 'selected'; ?>>Sidebar 5</option>
+          <option value="sidebar6" <?php if($dropdown_value == 'sidebar6') echo 'selected'; ?>>Sidebar 6</option>
         </select>
       </div>
     </div>

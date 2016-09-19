@@ -26,6 +26,9 @@
         case 'sidebar5':
         dynamic_sidebar( 'custom-5_sidebar' );
         break;
+        case 'sidebar6':
+        dynamic_sidebar( 'custom-6_sidebar' );
+        break;
         case 'sidebar-blog':
         dynamic_sidebar( 'community_sidebar' );
         break;
