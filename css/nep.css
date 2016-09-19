@@ -6,8 +6,10 @@
 
   /*margin-top: -40px !important;*/
 }
-
-.nep-primary-menu .design-nav {
+.nep-primary-menu {
+  display: flex;
+}
+.nep-primary-menu li:nth-child(2) {
   flex: 1 200px !important;
 }
 
@@ -22,10 +24,7 @@
   flex-direction: column;
 }
 
-#nep-homepage-hero-photo img,
-#nep-homepage-hero-photo #nep-homepage-hero-caption-container {
-  flex: 1;
-}
+
 
 #nep-homepage-hero-caption-container {
   color: #fff;
@@ -34,7 +33,7 @@
   display: flex;
   text-align: right;
   margin-top: -85px;
-
+  z-index: 1
 }
 
 #nep-homepage-hero-caption-content {
@@ -54,6 +53,7 @@
   height: 75px;
   padding: 5px;
   width: 75px;
+  z-index: 1
 }
 
 #nep-homepage-hero-photo:hover #nep-homepage-hero-caption-container {

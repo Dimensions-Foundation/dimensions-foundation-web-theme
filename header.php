@@ -36,6 +36,7 @@ if ( strstr( $blog_url, 'dimensionsfoundation.org' ) ) {
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>
     <?php wp_title(); ?>
   </title>
@@ -59,6 +60,7 @@ if ( strstr( $blog_url, 'dimensionsfoundation.org' ) ) {
 );
 
 wp_nav_menu( $defaults );	?>
+
 <header>
 
   <?php $defaults = array(

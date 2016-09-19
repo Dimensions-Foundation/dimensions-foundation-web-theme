@@ -33,6 +33,13 @@ function derf_theme_styles() {
 	wp_enqueue_style( 'dimensions_education_programs_css', get_template_directory_uri() . '/css/dep.min.css' );
 	// Add custom styles for natureexplore.org
 	wp_enqueue_style( 'nature_explore_css', get_template_directory_uri() . '/css/nep.min.css' );
+	/**
+	 * Load our IE-only stylesheet for all versions of IE:
+	 * <!--[if IE]> ... <![endif]-->
+	 */
+	wp_enqueue_style( 'derf-ie', get_template_directory_uri() . '/css/ie.min.css', array( 'derf') );
+	wp_style_add_data( 'derf-ie', 'conditional', 'IE' );
+
 }
 
 add_action( 'wp_enqueue_scripts', 'derf_theme_styles');
