@@ -134,7 +134,7 @@ input[type="submit"] {
 #top-menu-container {
   display: flex;
   height: 40px;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   text-align: center;
   width: 100%;
 }
@@ -231,10 +231,10 @@ aside .fixed-position div div ul li:last-child,
 .sidebar-nav li:last-child {
   border: none;
 }
+
 aside .fixed-position div div ul li a {
   font-weight: normal !important;
 }
-
 
 /* ----------- Sidebar Nav ----------- */
 .custom-sidebar-header,
@@ -282,7 +282,7 @@ aside .fixed-position div div ul li a {
 }
 
 .community-widget ul li a {
-font-weight: normal;
+  font-weight: normal;
 }
 
 .community-widget select {
@@ -290,7 +290,7 @@ font-weight: normal;
 }
 
 .community-widget-header ~ .screen-reader-text {
-  display: none ;
+  display: none;
 }
 
 /* -----------------------------------------------------------------------------
@@ -589,7 +589,6 @@ img {
 .attachment {
   margin-bottom: 0 !important;
 }
-
 
 /* -----------------------------------------------------------------------------
 *  Media Queries
