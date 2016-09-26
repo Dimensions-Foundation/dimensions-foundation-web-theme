@@ -11,7 +11,9 @@ if ( strstr( $blog_url, 'dimensionsfoundation.org' ) ) {
   } else {
     get_template_part( 'front-page', 'nep' );
   }
-}  else {
+}  else if ( strstr( $blog_url, 'dimensionsed.org' ) ) {
+  get_template_part( 'front-page', 'dep' );
+} else {
   get_template_part( 'page', 'sidebar' );
 }
 
