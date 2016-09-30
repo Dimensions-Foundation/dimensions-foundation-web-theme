@@ -90,8 +90,8 @@ header,
 }
 
 .site-logo {
-  margin: -10% auto 25px;
-  width: 100%;
+margin: -100px 0;
+position: absolute;
 }
 
 .site-logo a img {
@@ -134,7 +134,7 @@ input[type="submit"] {
 #top-menu-container {
   display: flex;
   height: 40px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   text-align: center;
   width: 100%;
 }
@@ -208,6 +208,7 @@ aside {
   border-radius: 0 25px 0 0;
   flex: 2 225px;
   flex-direction: column;
+margin-top: 100px;
   max-width: 275px;
 }
 
@@ -231,10 +232,10 @@ aside .fixed-position div div ul li:last-child,
 .sidebar-nav li:last-child {
   border: none;
 }
-
 aside .fixed-position div div ul li a {
   font-weight: normal !important;
 }
+
 
 /* ----------- Sidebar Nav ----------- */
 .custom-sidebar-header,
@@ -282,7 +283,7 @@ aside .fixed-position div div ul li a {
 }
 
 .community-widget ul li a {
-  font-weight: normal;
+font-weight: normal;
 }
 
 .community-widget select {
@@ -290,7 +291,7 @@ aside .fixed-position div div ul li a {
 }
 
 .community-widget-header ~ .screen-reader-text {
-  display: none;
+  display: none ;
 }
 
 /* -----------------------------------------------------------------------------
@@ -299,7 +300,7 @@ aside .fixed-position div div ul li a {
 */
 main {
   flex: 3 475px;
-  margin-top: -145px;
+
   max-width: 675px;
   padding: 50px 25px 50px;
   width: 95%;
@@ -589,6 +590,7 @@ img {
 .attachment {
   margin-bottom: 0 !important;
 }
+
 
 /* -----------------------------------------------------------------------------
 *  Media Queries
